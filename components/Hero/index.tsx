@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 
 const Hero = () => {
   return (
@@ -14,9 +16,20 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Ardu Hermanos
-                </h1>
+                <Image
+                  src="/images/logo/logo-2.png"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="w-full dark:hidden"
+                />
+                <Image
+                  src="/images/logo/logo.png"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="hidden w-full dark:block"
+                />
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
                   
                 </p>
