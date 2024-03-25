@@ -16,14 +16,14 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/logo/logo-3.png"
+                  src="/images/logo/logo-3.svg"
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
-                  src="/images/logo/logo-3.png"
+                  src="/images/logo/logo-3.svg"
                   alt="logo"
                   width={140}
                   height={30}
