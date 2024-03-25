@@ -16,7 +16,7 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/logo/logo-3.svg"
+                  src="/images/logo/logo-4.svg"
                   alt="logo"
                   width={140}
                   height={30}
