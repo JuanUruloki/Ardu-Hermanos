@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-white pb-16 pt-[200px] dark:bg-gray-dark md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -29,12 +29,11 @@ const Hero = () => {
                   height={30}
                   className="hidden w-full dark:block"
                 />
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                <p className="-mt-80 mb-12 text-justify text-base justify-center !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                {/* <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <p className="text-justify text-base justify-center -mt-[780px] !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   Fórmulas que inspiran, soluciones que perduran
                 </p>
-
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
