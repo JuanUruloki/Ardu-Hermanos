@@ -29,10 +29,12 @@ const Hero = () => {
                   height={30}
                   className="hidden w-full dark:block"
                 />
-                <p className="-mt-80 mb-12 text-justify text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  
+                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <p className="-mt-80 mb-12 text-justify text-base justify-center !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                  Fórmulas que inspiran, soluciones que perduran
                 </p>
-                {/* <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div> */}
+
+                </div>
               </div>
             </div>
           </div>
