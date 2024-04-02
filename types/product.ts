@@ -1,4 +1,4 @@
-export type Feature = {
+export type Products = {
   id: number;
   icon: JSX.Element;
   title: string;

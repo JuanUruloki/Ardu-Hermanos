@@ -1,21 +1,21 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import productsData from "./productsData";
 
-const Features = () => {
+const Products = () => {
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Productos / Servicios"
-            paragraph="Listado de productos o servicios."
+            title="Productos"
+            paragraph="Químicos Industriales y productos para piletas"
             center
           />
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
+            {productsData.map((product) => (
+              <SingleFeature key={product.id} product={product} />
             ))}
           </div>
         </div>
@@ -24,4 +24,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Products;

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24 h-min"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -30,8 +30,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Siguenos
                 </p>
                 <div className="flex items-center">
                   <a
@@ -163,10 +162,10 @@ const Footer = () => {
             </div> */}
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+              <div className="mb-12 lg:mb-16 text-xm">
+                {/* <h2 className="mb-10 text-xm font-bold text-black dark:text-white">
                   Ayuda
-                </h2>
+                </h2> */}
                 <ul>
                   <li>
                     <a

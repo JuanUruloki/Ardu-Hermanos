@@ -22,10 +22,35 @@ const AboutSectionOne = () => {
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 text-justify" >
               <SectionTitle
                 title="Nuestra historia."
-                paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                paragraph="Con orgullo y dedicación, nuestra empresa surge de la visión
+                pionera de nuestro socio fundador, Alfredo Ardu, en el año
+                1957. Inicialmente establecimos Electroclor S.A.C.I., la
+                primera planta de hipoclorito de sodio. A medida que
+                evolucionamos a lo largo de los años, nos asociamos con sus
+                hermanos y fundamos Ardu Hermanos S.R.L. en busca de
+                crecimiento y diversificación en la industria química. En
+                1982, respondiendo al crecimiento constante, nos transformamos
+                en una Sociedad Anónima (S.A.), adaptándonos a los desafíos y
+                oportunidades que presentaba el panorama nacional. Nuestra
+                expansión nos llevó a colaborar con diversos sectores y, en
+                ese período, establecimos nuestra sede en Chacra de la Merced,
+                que hoy en día es el epicentro de nuestras operaciones. A lo
+                largo de la década del 90 y principios del 2000, nos
+                especializamos en la provisión de servicios y venta de insumos
+                para el tratamiento de aguas de consumo humano y residuales.
+                Esta dedicación sigue siendo el corazón de nuestro negocio
+                actual, donde también hemos ampliado nuestra oferta para
+                incluir insumos destinados a piletas y natatorios como asi
+                también diversos insumos químicos para industrias. Hoy, somos
+                un actor relevante en el mercado del hipoclorito de sodio,
+                comprometidos con la excelencia y la satisfacción de nuestros
+                clientes. Agradecemos la confianza depositada en nosotros a lo
+                largo de los años y seguimos enfocados en brindar soluciones
+                de calidad para el tratamiento del agua y el cuidado de
+                espacios acuáticos."
                 mb="44px"
               />
 
