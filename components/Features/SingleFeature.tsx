@@ -4,7 +4,7 @@ const SingleFeature = ({ product }: { product: Products }) => {
   const { icon, title, paragraph } = product;
   return (
     <div className="w-full">
-      <div className="wow fadeInUp" data-wow-delay=".15s">
+      <div className="wow fadeInUp " data-wow-delay=".15s">
         {/* <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
           {icon}
         </div> */}
