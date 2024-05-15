@@ -2,7 +2,7 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const Map = () => {
   return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+    <LoadScript  googleMapsApiKey=  {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
       <div className="h-96 w-full ">
         <GoogleMap
           mapContainerStyle={{ width: "100%", height: "100%" }}
@@ -18,6 +18,7 @@ const Map = () => {
             }}
           />
         </GoogleMap>
+    
       </div>
     </LoadScript>
   );
