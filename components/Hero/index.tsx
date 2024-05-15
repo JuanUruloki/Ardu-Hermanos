@@ -15,12 +15,8 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                className="wow w-full fadeInUp mx-auto max-w-[800px] h-96 text-center"
+                className="wow w-full fadeInUp mx-auto max-w-[950px] h-[55vh] text-center"
                 data-wow-delay=".2s"
-                // style={{backgroundImage: `url('/images/Brand/paleta.jpg')`,
-                // backgroundSize: 'cover', 
-                // backgroundPosition: 'center',
-                // }}
               >
                 <Image
                   src="/images/logo/logo-4.svg"
