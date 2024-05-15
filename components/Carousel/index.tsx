@@ -2,10 +2,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import img1 from "../../public/images/about/about-image-2-dark.svg";
-import img2 from "../../public/images/about/about-image-2.svg";
-import img3 from "../../public/images/about/about-image-dark.svg";
-import img4 from "../../public/images/about/about-image.svg";
+
 /**
  * Carousel component for nextJS and Tailwind.
  * Using external library react-easy-swipe for swipe gestures on mobile devices (optional)
@@ -16,17 +13,17 @@ import img4 from "../../public/images/about/about-image.svg";
 export default function Carousel() {
   const images = [
     {
-      image: "/images/about/about-image-2-dark.svg",
+      image: "/images/Backgrounds/Agua1.jpg",
     },
     {
-      image: "/images/logo/logo-3.svg",
+      image: "/images/Backgrounds/Agua2.jpg",
     },
     {
-      image: "/images/logo/logo-4.svg",
+      image: "/images/Backgrounds/Limpieza.jpg",
     },
-    {
-      image: "/images/about/about-image.svg",
-    },
+    // {
+    //   image: "/images/about/about-image.svg",
+    // },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -41,16 +38,16 @@ export default function Carousel() {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNextSlide, 500);
+    const interval = setInterval(handleNextSlide, 8000);
     return () => clearInterval(interval);
   }, [currentSlide]);
 
   return (
     <div className="relative">
-      <AiOutlineLeft
+      {/* <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute inset-y-1/2 left-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
-      />
+      /> */}
       <div className="relative m-auto flex h-[50vh] w-full overflow-hidden">
         <Swipe
           onSwipeLeft={handleNextSlide}
@@ -73,10 +70,10 @@ export default function Carousel() {
           })}
         </Swipe>
       </div>
-      <AiOutlineRight
+      {/* <AiOutlineRight
         onClick={handleNextSlide}
         className="absolute inset-y-1/2 right-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
-      />
+      /> */}
 
       <div className="relative flex justify-center p-2">
         {images.map((_, index) => {
