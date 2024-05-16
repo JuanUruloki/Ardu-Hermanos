@@ -20,21 +20,21 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <div
+      {/* <div
         className="h-[10vh] w-full"
         style={{
           backgroundImage: "url('/images/Brand/paleta2.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      ></div>
+      ></div> */}
         {/* <Carousel /> */}
-      <Features />
       {/* <Video /> */}
       {/* <Brands /> */}
       <AboutSectionOne />
       {/* <AboutSectionTwo /> */}
       <Testimonials />
+      {/* <Features /> */}
       {/* <Pricing /> */}
       {/* <Blog /> */}
       <Contact />

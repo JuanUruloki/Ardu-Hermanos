@@ -48,7 +48,7 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
+          <div className="relative -mx-8 flex items-center justify-between">
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
