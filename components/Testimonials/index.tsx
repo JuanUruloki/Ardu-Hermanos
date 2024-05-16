@@ -1,41 +1,58 @@
 import { Testimonial } from "@/types/testimonial";
-import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import SectionTitle from "../Common/SectionTitle";
+import SingleProduct from "../Products/SingleProduct";
+import productsData from "../Products/productsData";
 
-const testimonialData: Testimonial[] = [
-  {
-    id: 1,
-    name: "Musharof Chy",
-    designation: "Gerente de...",
-    content:
-      "Testimonio de cliente.",
-    image: "/images/testimonials/auth-01.png",
-    star: 5,
-  },
-  {
-    id: 2,
-    name: "Devid Weilium",
-    designation: "Gerente de...",
-    content:
-      "Testimonio de cliente.",
-    image: "/images/testimonials/auth-02.png",
-    star: 5,
-  },
-  {
-    id: 3,
-    name: "Lethium Frenci",
-    designation: "Gerente de...",
-    content:
-      "Testimonio de cliente.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
-  },
-];
+// const testimonialData: Testimonial[] = [
+//   {
+//     id: 1,
+//     name: "Musharof Chy",
+//     designation: "Gerente de...",
+//     content:
+//       "Testimonio de cliente.",
+//     image: "/images/testimonials/auth-01.png",
+//     star: 5,
+//   },
+//   {
+//     id: 2,
+//     name: "Devid Weilium",
+//     designation: "Gerente de...",
+//     content:
+//       "Testimonio de cliente.",
+//     image: "/images/testimonials/auth-02.png",
+//     star: 5,
+//   },
+//   {
+//     id: 3,
+//     name: "Lethium Frenci",
+//     designation: "Gerente de...",
+//     content:
+//       "Testimonio de cliente.",
+//     image: "/images/testimonials/auth-03.png",
+//     star: 5,
+//   },
+// ];
 
 const Testimonials = () => {
   return (
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
-      <div className="container">
+      <div className="container ">
+          <SectionTitle
+            title="Nuestros Productos"
+            paragraph="Soluciones para todas las necesidades"
+            center
+          />
+          <div className="-mt-10">
+
+          </div>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 text-justify">
+            {productsData.map((product) => (
+              <SingleProduct key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      {/* <div className="container">
         <SectionTitle
           title="Que opinan nuestros clientes"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
@@ -47,7 +64,7 @@ const Testimonials = () => {
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
           width="238"

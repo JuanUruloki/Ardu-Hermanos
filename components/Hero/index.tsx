@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Carousel from "@/components/Carousel";
 
 
 const Hero = () => {
@@ -11,9 +12,10 @@ const Hero = () => {
 
         >
         
+          <Carousel/>
         <div className="container ">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
+            {/* <div className="w-full px-4">
               <div
                 className="wow w-full fadeInUp mx-auto max-w-[950px] h-[55vh] text-center"
                 data-wow-delay=".2s"
@@ -33,7 +35,7 @@ const Hero = () => {
                   className="hidden w-full dark:block"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100 ">
