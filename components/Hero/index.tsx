@@ -11,7 +11,7 @@ const Hero = () => {
         className="relative z-10 overflow-hidden  pb-16 pt-[200px] dark:bg-gray-dark md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
 
         >
-        
+        <div className="h-px -mt-28 mb-32 w-full bg-gradient-to-r from-transparent via-[#a7acb3d8] to-transparent dark:via-[#959cb1]"></div>
           <Carousel/>
         <div className="container ">
           <div className="-mx-4 flex flex-wrap">
