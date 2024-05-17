@@ -57,7 +57,7 @@ export default function Carousel() {
   }, [currentSlide]);
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full mb-28">
       <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute inset-y-1/2 left-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
@@ -111,14 +111,14 @@ export default function Carousel() {
         className="absolute inset-y-1/2 right-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
       />
 
-      <div className="relative flex justify-center py-0">
+      <div className="relative flex justify-center pb-10">
         {imagesDark.map((_, index) => {
           return (
             <div
               className={
                 index === currentSlide
-                  ? "mx-2 mb-2 h-4 w-4 cursor-pointer rounded-full bg-gray-700"
-                  : "mx-2 mb-2 h-4 w-4 cursor-pointer rounded-full bg-gray-300"
+                  ? "mx-1 mb-2 h-2 w-2 cursor-pointer rounded-full bg-blue-800"
+                  : "mx-1 mb-2 h-2 w-2 cursor-pointer rounded-full bg-gray-300"
               }
               key={index}
               onClick={() => {

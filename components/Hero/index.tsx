@@ -11,31 +11,10 @@ const Hero = () => {
         className="relative z-10 overflow-hidden  pb-16 pt-[200px] dark:bg-gray-dark md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
 
         >
-        <div className="h-px -mt-28 mb-32 w-full bg-gradient-to-r from-transparent via-[#a7acb3d8] to-transparent dark:via-[#959cb1]"></div>
+        <div className="h-px -mt-28 mb-32  w-full bg-gradient-to-r from-transparent via-[#a7acb3d8] to-transparent dark:via-[#959cb1]"></div>
           <Carousel/>
         <div className="container ">
           <div className="-mx-4 flex flex-wrap">
-            {/* <div className="w-full px-4">
-              <div
-                className="wow w-full fadeInUp mx-auto max-w-[950px] h-[55vh] text-center"
-                data-wow-delay=".2s"
-              >
-                <Image
-                  src="/images/logo/logo-4.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo-3.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100 ">
@@ -52,18 +31,23 @@ const Hero = () => {
               cy="63"
               r="225"
               fill="url(#paint0_linear_25:217)"
+              opacity="0.2"
             />
             <circle
               cx="17.9997"
               cy="182"
               r="18"
               fill="url(#paint1_radial_25:217)"
+              opacity="0.2"
+
             />
             <circle
               cx="76.9997"
               cy="288"
               r="34"
               fill="url(#paint2_radial_25:217)"
+              opacity="0.2"
+
             />
             <circle
               cx="325.486"
@@ -71,9 +55,11 @@ const Hero = () => {
               r="180"
               transform="rotate(-37.6852 325.486 302.87)"
               fill="url(#paint3_linear_25:217)"
+              opacity="0.2"
+              
             />
             <circle
-              opacity="0.8"
+              opacity="0.3"
               cx="184.521"
               cy="315.521"
               r="132.862"
@@ -81,7 +67,7 @@ const Hero = () => {
               stroke="url(#paint4_linear_25:217)"
             />
             <circle
-              opacity="0.8"
+              opacity="0.3"
               cx="356"
               cy="290"
               r="179.5"
@@ -89,7 +75,7 @@ const Hero = () => {
               stroke="url(#paint5_linear_25:217)"
             />
             <circle
-              opacity="0.8"
+              opacity="0.3"
               cx="191.659"
               cy="302.659"
               r="133.362"
@@ -128,7 +114,7 @@ const Hero = () => {
                 gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
               >
                 <stop offset="0.145833" stopColor="#5980FF" stopOpacity="0" />
-                <stop offset="1" stopColor="#5980FF" stopOpacity="0.08" />
+                <stop offset="1" stopColor="#5980FF" stopOpacity="0.04" />
               </radialGradient>
               <linearGradient
                 id="paint3_linear_25:217"
@@ -185,6 +171,8 @@ const Hero = () => {
             viewBox="0 0 364 201"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            opacity="0.3"
+
           >
             <path
               d="M5.88928 72.3303C33.6599 66.4798 101.397 64.9086 150.178 105.427C211.155 156.076 229.59 162.093 264.333 166.607C299.076 171.12 337.718 183.657 362.889 212.24"

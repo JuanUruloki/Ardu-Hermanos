@@ -153,6 +153,23 @@ const Header = () => {
                 </div>
               </div>
             </div>
+            <div className="hidden lg:block">
+
+            <Image
+            src="/images/logo/logo_dark.svg"
+            alt="logo"
+            width={180}
+            height={40}
+            className="hidden dark:block"
+            />
+            <Image
+            src="/images/logo/logo_light.svg"
+            alt="logo"
+            width={180}
+            height={40}
+            className="dark:hidden"
+            />
+            </div>
           </div>
         </div>
       </header>
