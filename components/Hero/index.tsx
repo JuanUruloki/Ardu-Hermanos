@@ -1,23 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
+import { useTheme } from "next-themes";
 
 
 const Hero = () => {
+  const {theme} = useTheme()
   return (
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden  pb-16 pt-[200px] dark:bg-gray-dark md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
+        
+        className="relative z-10 overflow-hidden h-[100vh] pb-16 pt-[200px] bg-light dark:bg-dark md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
 
         >
-        <div className="h-px -mt-28 mb-32  w-full bg-gradient-to-r from-transparent via-[#a7acb3d8] to-transparent dark:via-[#959cb1]"></div>
-          <Carousel/>
-        <div className="container ">
+          <div className=" relative z-10 overflow-hidden h-[100vh] bg-center -mt-52">
+            <Carousel/>
+          </div>
+        {/* <div className="container ">
           <div className="-mx-4 flex flex-wrap">
           </div>
-        </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100 ">
+        </div> */}
+        {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100 ">
           
           <svg
             width="450"
@@ -162,8 +166,8 @@ const Hero = () => {
               </linearGradient>
             </defs>
           </svg>
-        </div>
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+        </div> */}
+        {/* <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           
           <svg
             width="364"
@@ -268,7 +272,7 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
       </section>
     </>
   );
