@@ -84,7 +84,7 @@ export default function Carousel() {
           })}
         </Swipe>
       </div>
-      <div className="relative m-auto flex h-[60vh] w-full overflow-hidden dark:hidden">
+      <div className="relative h-full w-full overflow-hidden dark:hidden">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -98,7 +98,7 @@ export default function Carousel() {
                   key={index}
                   src={image.image}
                   layout="fill"
-                  objectFit="contain"
+                  objectFit="cover"
                   className="animate-fadeIn"
                 />
               );
