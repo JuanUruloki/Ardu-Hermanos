@@ -58,10 +58,10 @@ export default function Carousel() {
 
   return (
     <div className="relative w-full h-full mb-28">
-      {/* <AiOutlineLeft
+      <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute inset-y-1/2 left-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
-      /> */}
+      />
       <div className="relative h-full w-full overflow-hidden hidden dark:block">
         <Swipe
           onSwipeLeft={handleNextSlide}
@@ -84,7 +84,7 @@ export default function Carousel() {
           })}
         </Swipe>
       </div>
-      <div className="relative m-auto flex h-[60vh] w-full overflow-hidden dark:hidden">
+      <div className="relative h-full w-full overflow-hidden dark:hidden">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -98,7 +98,7 @@ export default function Carousel() {
                   key={index}
                   src={image.image}
                   layout="fill"
-                  objectFit="contain"
+                  objectFit="cover"
                   className="animate-fadeIn"
                 />
               );
@@ -106,10 +106,10 @@ export default function Carousel() {
           })}
         </Swipe>
       </div>
-      {/* <AiOutlineRight
+      <AiOutlineRight
         onClick={handleNextSlide}
         className="absolute inset-y-1/2 right-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
-      /> */}
+      />
 
       {/* <div className="relative flex justify-center pb-10">
         {imagesDark.map((_, index) => {
