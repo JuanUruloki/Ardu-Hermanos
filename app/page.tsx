@@ -8,6 +8,9 @@ import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 
 import { Metadata } from "next";
+import PlantasPotabilizadoras from "@/components/PlantasPotabilizadoras";
+import Industrias from "@/components/Industrias";
+import Piletas from "@/components/Piletas";
 
 // export const metadata: Metadata = {
 //   title: "Ardu Hermanos",
@@ -28,7 +31,7 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       ></div> */}
-        {/* <Carousel /> */}
+      {/* <Carousel /> */}
       {/* <Video /> */}
       {/* <Brands /> */}
       <AboutSectionOne />
@@ -36,7 +39,9 @@ export default function Home() {
       <Testimonials />
       {/* <Features /> */}
       {/* <Pricing /> */}
-      {/* <Blog /> */}
+      <PlantasPotabilizadoras />
+      <Industrias />
+      <Piletas />
       <Contact />
     </>
   );

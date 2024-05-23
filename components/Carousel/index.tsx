@@ -54,6 +54,7 @@ export default function Carousel() {
   useEffect(() => {
     const interval = setInterval(handleNextSlide, 9000);
     return () => clearInterval(interval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSlide]);
 
   return (

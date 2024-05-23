@@ -13,43 +13,37 @@ const menuData: Menu[] = [
     path: "/about",
     newTab: false,
   },
-  {
-    id: 33,
-    title: "Galeria",
-    path: "/blog",
-    newTab: false,
-  },
-  {
-    id: 3,
-    title: "Contacto",
-    path: "/contact",
-    newTab: false,
-  },
   // {
-  //   id: 4,
-  //   title: "Paginas",
+  //   id: 33,
+  //   title: "Galeria",
+  //   path: "/blog",
   //   newTab: false,
-  //   submenu: [
-  //     {
-  //       id: 41,
-  //       title: "Sobre nosotros",
-  //       path: "/about",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 42,
-  //       title: "Contacto",
-  //       path: "/contact",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 43,
-  //       title: "Productos",
-  //       path: "/blog",
-  //       newTab: false,
-  //     },
+  // },
+  {
+    id: 4,
+    title: "Productos",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "Plantas potabilizadoras",
+        path: "/plantasPotabilizadoras",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Industrias",
+        path: "/industrias",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Piletas",
+        path: "/piletas",
+        newTab: false,
+      },
       // {
-      //   id: 44,
+        // id: 44,
       //   title: "Blog Sidebar Page",
       //   path: "/blog-sidebar",
       //   newTab: false,
@@ -78,7 +72,13 @@ const menuData: Menu[] = [
       //   path: "/error",
       //   newTab: false,
       // },
-    // ],
-  // },
+    ],
+  },
+  {
+    id: 3,
+    title: "Contacto",
+    path: "/contact",
+    newTab: false,
+  },
 ];
 export default menuData;
