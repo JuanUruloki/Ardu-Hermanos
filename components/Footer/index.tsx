@@ -13,23 +13,23 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
+                <Link href="/" className="-mb-48 -mt-20 -ml-28 inline-block">
                   <Image
                     src="/images/logo/logo-2.svg"
                     alt="logo"
                     className="w-full dark:hidden"
-                    width={140}
+                    width={30}
                     height={30}
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/logo/logo-3.svg"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}
                     height={30}
                   />
                 </Link>
-                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
+                <p className="dark:text-body-color-dark mb-4 -mt-8 text-base leading-relaxed text-body-color">
                   Siguenos
                 </p>
                 <div className="flex items-center">
@@ -162,7 +162,7 @@ const Footer = () => {
             </div> */}
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16 text-xm">
+              <div className="-mb-12 -mt-8 lg:mb-16 text-xm">
                 {/* <h2 className="mb-10 text-xm font-bold text-black dark:text-white">
                   Ayuda
                 </h2> */}
