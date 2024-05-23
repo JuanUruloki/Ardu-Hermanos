@@ -82,6 +82,25 @@ const Header = () => {
                   }`}
                 >
                   <ul className="block lg:flex lg:space-x-12">
+                  <div className="hidden lg:block mr-1 mt-1.5 ">
+                    <a href="/">
+
+                    <Image
+                    src="/images/logo/logo_dark.svg"
+                    alt="logo"
+                    width={180}
+                    height={40}
+                    className="hidden dark:block"
+                    />
+                    <Image
+                    src="/images/logo/logo_light.svg"
+                    alt="logo"
+                    width={180}
+                    height={40}
+                    className="dark:hidden"
+                    />
+                    </a>
+                  </div>
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
@@ -141,23 +160,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden lg:block mr-4 ">
-
-            <Image
-            src="/images/logo/logo_dark.svg"
-            alt="logo"
-            width={180}
-            height={40}
-            className="hidden dark:block"
-            />
-            <Image
-            src="/images/logo/logo_light.svg"
-            alt="logo"
-            width={180}
-            height={40}
-            className="dark:hidden"
-            />
-            </div>
+            
           </div>
         </div>
       </header>

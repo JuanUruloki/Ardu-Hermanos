@@ -14,7 +14,7 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Galeria"
+        pageName="Industrias"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
 
