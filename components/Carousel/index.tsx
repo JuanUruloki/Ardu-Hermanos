@@ -13,9 +13,6 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 export default function Carousel() {
   const imagesDark = [
     {
-      image: "/images/Backgrounds/Logo_dark.gif",
-    },
-    {
       image: "/images/Backgrounds/Plantas_potabilizadoras.gif",
     },
     {
@@ -23,13 +20,13 @@ export default function Carousel() {
     },
     {
       image: "/images/Backgrounds/Piletas.gif",
+    },
+    {
+      image: "/images/Backgrounds/Logo_dark.gif",
     },
   ];
   const imagesLight = [
     {
-      image: "/images/Backgrounds/Logo_light.gif",
-    },
-    {
       image: "/images/Backgrounds/Plantas_potabilizadoras.gif",
     },
     {
@@ -37,33 +34,53 @@ export default function Carousel() {
     },
     {
       image: "/images/Backgrounds/Piletas.gif",
+    },
+    {
+      image: "/images/Backgrounds/Logo_light.gif",
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNextSlide = () => {
-    let newSlide = currentSlide === imagesDark.length - 1 ? 0 : currentSlide + 1;
+    let newSlide =
+      currentSlide === imagesDark.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
   };
 
   const handlePrevSlide = () => {
-    let newSlide = currentSlide === 0 ? imagesDark.length - 1 : currentSlide - 1;
+    let newSlide =
+      currentSlide === 0 ? imagesDark.length - 1 : currentSlide - 1;
     setCurrentSlide(newSlide);
   };
 
   useEffect(() => {
     const interval = setInterval(handleNextSlide, 9000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSlide]);
+
+  const preloadImage = (index: number) => {
+    const darkImage = new window.Image();
+    darkImage.src = imagesDark[index].image;
+    const lightImage = new window.Image();
+    lightImage.src = imagesLight[index].image;
+  };
+
+  useEffect(() => {
+    const nextIndex = currentSlide === imagesDark.length - 1 ? 0 : currentSlide + 1;
+    const prevIndex = currentSlide === 0 ? imagesDark.length - 1 : currentSlide - 1;
+    preloadImage(nextIndex);
+    preloadImage(prevIndex);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSlide]);
 
   return (
-    <div className="relative w-full h-full mb-28">
-      <AiOutlineLeft
+    <div className="relative mb-28 h-full w-full">
+      {/* <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute inset-y-1/2 left-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
-      />
-      <div className="relative h-full w-full overflow-hidden hidden dark:block">
+      /> */}
+      <div className="relative hidden h-full w-full overflow-hidden dark:block">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -72,14 +89,17 @@ export default function Carousel() {
           {imagesDark.map((image, index) => {
             if (index === currentSlide) {
               return (
+                <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
                 <Image
                   alt={"image"}
-                  key={index}
                   src={image.image}
                   layout="fill"
                   objectFit="cover"
                   className="animate-fadeIn"
+                  priority={index === currentSlide}
+                  loading={index === currentSlide ? "eager" : "lazy"}
                 />
+              </div>
               );
             }
           })}
@@ -94,23 +114,26 @@ export default function Carousel() {
           {imagesLight.map((image, index) => {
             if (index === currentSlide) {
               return (
+                <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
                 <Image
                   alt={"image"}
-                  key={index}
                   src={image.image}
                   layout="fill"
                   objectFit="cover"
                   className="animate-fadeIn"
+                  priority={index === currentSlide}
+                  loading={index === currentSlide ? "eager" : "lazy"}
                 />
+              </div>
               );
             }
           })}
         </Swipe>
       </div>
-      <AiOutlineRight
+      {/* <AiOutlineRight
         onClick={handleNextSlide}
         className="absolute inset-y-1/2 right-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
-      />
+      /> */}
 
       {/* <div className="relative flex justify-center pb-10">
         {imagesDark.map((_, index) => {
