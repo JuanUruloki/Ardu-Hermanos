@@ -43,12 +43,12 @@ const Header = () => {
       <header
         className={`header left-0 top-0 z-40 flex w-full h-26 items-center ${
           sticky
-            ? "fixed z-[9999] bg-gray-200 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-700 dark:shadow-sticky-dark"
+            ? "fixed z-[9999] bg-gray-200 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-blueArdu dark:shadow-sticky-dark"
             : "absolute bg-transparent"
         }`}
       >
         <div className="container">
-          <div className={`relative -mx-8 mt-12 flex items-center justify-between ${!sticky ? "bg-gray-200 dark:bg-gray-700": "bg-transparent pb-12"}`}>
+          <div className={`relative -mx-8 mt-12 flex items-center justify-between ${!sticky ? "bg-gray-200 dark:bg-blueArdu": "bg-transparent pb-12"}`}>
             <div className="flex w-full h-24 items-center justify-between px-4">
               <div>
                 <button
