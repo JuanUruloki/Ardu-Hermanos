@@ -14,7 +14,7 @@ const productsData: Products[] = [
     ),
     title: "Soda Cáustica",
     paragraph:
-      "",
+      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
   },
   {
     id: 1,
@@ -29,7 +29,7 @@ const productsData: Products[] = [
     ),
     title: "Hipoclorito de Sodio 100 g/l",
     paragraph:
-      "",
+      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
   },
   {
     id: 1,
@@ -44,7 +44,7 @@ const productsData: Products[] = [
     ),
     title: "Hipoclorito de Sodio 140 g/l",
     paragraph:
-      "",
+      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
   },
   {
     id: 1,
@@ -59,7 +59,7 @@ const productsData: Products[] = [
     ),
     title: "Ácido Clorhídrico",
     paragraph:
-      "",
+      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
   },
   {
     id: 1,
@@ -74,7 +74,7 @@ const productsData: Products[] = [
     ),
     title: "Agua Oxigenada",
     paragraph:
-      "",
+      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
   },
   {
     id: 1,
@@ -89,7 +89,7 @@ const productsData: Products[] = [
     ),
     title: "Urea",
     paragraph:
-      "",
+      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
   },
   {
     id: 1,
