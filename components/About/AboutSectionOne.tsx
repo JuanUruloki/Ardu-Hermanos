@@ -18,11 +18,11 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about" className="pt-16 md:pt-20 lg:pt-28 bg-greyArdu">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2 text-justify" >
+          <div className="-mx-4 flex flex-col items-center">
+            <div className="w-full px-4 lg:w-100% text-justify bg-grey-900" >
               <SectionTitle
                 title="Nuestra historia."
                 paragraph="Con orgullo y dedicación, nuestra empresa surge de la visión
@@ -79,7 +79,7 @@ const AboutSectionOne = () => {
                 className="wow fadeInUp relative mx-auto aspect-[9/13] max-w-[500px] lg:mr-0"
                 data-wow-delay=".2s"
               >
-                <Image
+                {/* <Image
                   src="/images/Brand/Planta_light.jpg"
                   alt="about-image"
                   fill
@@ -90,10 +90,10 @@ const AboutSectionOne = () => {
                   alt="about-image"
                   fill
                   className=" mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
-                />
+                /> */}
               </div>
-            </div>
           </div>
+            </div>
         </div>
       </div>
     </section>
