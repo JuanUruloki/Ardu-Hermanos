@@ -23,14 +23,6 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      {/* <div
-        className="h-[10vh] w-full"
-        style={{
-          backgroundImage: "url('/images/Brand/paleta2.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div> */}
       {/* <Carousel /> */}
       {/* <Video /> */}
       {/* <Brands /> */}
@@ -39,9 +31,9 @@ export default function Home() {
       <Testimonials />
       {/* <Features /> */}
       {/* <Pricing /> */}
-      <PlantasPotabilizadoras />
+      {/* <PlantasPotabilizadoras />
       <Industrias />
-      <Piletas />
+      <Piletas /> */}
       <Contact />
     </>
   );
