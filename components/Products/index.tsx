@@ -9,7 +9,7 @@ const Products = () => {
   return (
     <>
       <section id="productos" className="py-16 md:py-20 lg:py-28">
-        <div className="container ">
+        <div className="container">
           <SectionTitle
             title="Nuestros Productos"
             paragraph="Soluciones para todas las necesidades"
