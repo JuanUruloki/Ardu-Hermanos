@@ -26,9 +26,9 @@ export default function Home() {
       {/* <Carousel /> */}
       {/* <Video /> */}
       {/* <Brands /> */}
+      <Testimonials />
       <AboutSectionOne />
       {/* <AboutSectionTwo /> */}
-      <Testimonials />
       {/* <Features /> */}
       {/* <Pricing /> */}
       {/* <PlantasPotabilizadoras />
