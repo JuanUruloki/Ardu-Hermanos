@@ -1,25 +1,44 @@
-import SingleBlog from "@/components/PlantasPotabilizadoras/SingleBlog";
-import blogData from "@/components/PlantasPotabilizadoras/blogData";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import SectionTitle from "../../components/Common/SectionTitle";
+import SingleProduct from "../../components/Products/SingleProduct";
+import productsData from "../../components/Products/plantasPotabilizadorasData";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Ardu Hermanos > Plantas potabilizadoras",
+  description: "Productos para plantas potabilizadoras",
   // other metadata
 };
 
-const Blog = () => {
+const PlantasPotabilizadoras = () => {
   return (
     <>
-      <Breadcrumb
+      {/* <Breadcrumb
         pageName="Plantas Potabilizadoras"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
+        description=""
+      /> */}
+      <div className=" z-10 overflow-hidden h-[60vh] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/Products/Plantas_potabilizadoras.gif')"
+  }}>
+          </div>
 
-      <section className="pb-[120px] pt-[120px]">
-        <div className="container">
+      <section className="pb-[120px] pt-[100px] bg-cover bg-top bg-no-repeat" style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')"
+  }}>
+      <div className="container -mt-16">
+          <SectionTitle
+            title="Productos para el tratamiento de agua"
+            paragraph="En nuestra empresa, ofrecemos una gama completa de productos químicos diseñados específicamente para plantas potabilizadoras. Desde coagulantes y floculantes hasta desinfectantes de última generación, nos comprometemos a proporcionar soluciones de alta calidad que garanticen la pureza y seguridad del agua potable para comunidades y municipios"
+            center
+          />
+          <div className="-mt-10">
+
+          </div>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 text-justify">
+            {productsData.map((product) => (
+              <SingleProduct key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+        {/* <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             {blogData.map((blog) => (
               <div
@@ -93,10 +112,10 @@ const Blog = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
 };
 
-export default Blog;
+export default PlantasPotabilizadoras;
