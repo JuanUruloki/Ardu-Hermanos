@@ -23,7 +23,7 @@ const Industrias = () => {
 
       <section className="pb-[120px] pt-[120px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')"
   }}>
-      <div className="container">
+      <div className="container -mt-20">
           <SectionTitle
             title="Productos para procesos industriales"
             paragraph="En nuestro catálogo de productos químicos para industrias, encontrarás una amplia selección de compuestos diseñados para optimizar procesos productivos y garantizar estándares de calidad superiores. Desde agentes de limpieza y desengrasantes hasta inhibidores de corrosión y productos especializados para tratamiento de efluentes, ofrecemos soluciones integrales que ayudarán a mejorar la eficiencia y la rentabilidad de tu empresa"

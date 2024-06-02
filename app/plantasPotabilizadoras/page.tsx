@@ -21,9 +21,9 @@ const PlantasPotabilizadoras = () => {
   }}>
           </div>
 
-      <section className="pb-[120px] pt-[120px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')"
+      <section className="pb-[120px] pt-[100px] bg-cover bg-top bg-no-repeat" style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')"
   }}>
-      <div className="container">
+      <div className="container -mt-16">
           <SectionTitle
             title="Productos para el tratamiento de agua"
             paragraph="En nuestra empresa, ofrecemos una gama completa de productos químicos diseñados específicamente para plantas potabilizadoras. Desde coagulantes y floculantes hasta desinfectantes de última generación, nos comprometemos a proporcionar soluciones de alta calidad que garanticen la pureza y seguridad del agua potable para comunidades y municipios"

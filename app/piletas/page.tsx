@@ -21,9 +21,9 @@ const Piletas = () => {
   }}>
           </div>
 
-      <section className="pb-[120px] pt-[120px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')"
+      <section className="pb-[120px] pt-[120px] bg-cover bg-bottom bg-no-repeat" style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')"
   }}>
-      <div className="container">
+      <div className="container -mt-20">
           <SectionTitle
             title="Productos para piletas"
             paragraph="Nuestra línea de productos químicos para el cuidado de piletas está diseñada para garantizar agua cristalina y segura en todo momento. Desde desinfectantes de amplio espectro y reguladores de pH hasta algicidas y clarificadores, ofrecemos una variedad de productos de alta calidad que ayudarán a mantener tu pileta en óptimas condiciones, brindando tranquilidad y disfrute a tus momentos de recreación"
