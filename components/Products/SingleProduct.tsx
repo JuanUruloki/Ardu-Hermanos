@@ -1,7 +1,7 @@
 import { Products } from "@/types/product";
 
 const SingleProduct = ({ product }: { product: Products }) => {
-  const { icon, title, paragraph } = product;
+  const { title, paragraph } = product;
   return (
     <div className="w-full">
       <div className="wow fadeInUp " data-wow-delay=".15s">
