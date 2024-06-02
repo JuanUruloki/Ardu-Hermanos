@@ -1,25 +1,44 @@
-import SingleBlog from "@/components/PlantasPotabilizadoras/SingleBlog";
-import blogData from "@/components/PlantasPotabilizadoras/blogData";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import SectionTitle from "../../components/Common/SectionTitle";
+import SingleProduct from "../../components/Products/SingleProduct";
+import productsData from "../../components/Products/piletasData";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Ardu Hermanos > Piletas",
+  description: "Productos para piletas",
   // other metadata
 };
 
-const Blog = () => {
+const Piletas = () => {
   return (
     <>
-      <Breadcrumb
-        pageName="Piletas"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
+      {/* <Breadcrumb
+        pageName="Plantas Potabilizadoras"
+        description=""
+      /> */}
+      <div className=" z-10 overflow-hidden h-[60vh] bg-cover bg-top bg-no-repeat" style={{ backgroundImage: "url('/images/Products/Piletas.gif')"
+  }}>
+          </div>
 
-      <section className="pb-[120px] pt-[120px]">
-        <div className="container">
+      <section className="pb-[120px] pt-[120px] bg-cover bg-bottom bg-no-repeat" style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')"
+  }}>
+      <div className="container -mt-20">
+          <SectionTitle
+            title="Productos para piletas"
+            paragraph="Nuestra línea de productos químicos para el cuidado de piletas está diseñada para garantizar agua cristalina y segura en todo momento. Desde desinfectantes de amplio espectro y reguladores de pH hasta algicidas y clarificadores, ofrecemos una variedad de productos de alta calidad que ayudarán a mantener tu pileta en óptimas condiciones, brindando tranquilidad y disfrute a tus momentos de recreación"
+            center
+          />
+          <div className="-mt-10">
+
+          </div>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 text-justify">
+            {productsData.map((product) => (
+              <SingleProduct key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+        {/* <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             {blogData.map((blog) => (
               <div
@@ -93,10 +112,10 @@ const Blog = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
 };
 
-export default Blog;
+export default Piletas;
