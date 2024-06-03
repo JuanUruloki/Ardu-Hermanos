@@ -81,8 +81,8 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
-                  <div className="hidden lg:block mr-1 mt-1 mb-1 ">
+                  <ul className="block lg:flex lg:space-x-20">
+                  <div className="hidden lg:block ml-8 mt-1 mb-1 ">
                     <a href="/">
 
                     <Image
