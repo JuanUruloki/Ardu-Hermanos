@@ -18,7 +18,7 @@ const Contact = () => {
                 Necesitas ayuda? Contactanos
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Nuestro equipo de atención al cliente estaran encantados de atenderte.
+                Nuestro equipo de atención al cliente está esperando tu consulta.
               </p>
               <form>
                 <div className="-mx-4 flex flex-wrap">

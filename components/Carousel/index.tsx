@@ -16,19 +16,19 @@ export default function Carousel() {
     { image: "/images/Backgrounds/Plantas_potabilizadoras.gif" },
     { image: "/images/Backgrounds/Industrias.gif" },
     { image: "/images/Backgrounds/Piletas.gif" },
-    { image: "/images/Backgrounds/Logo_dark.gif" },
+    // { image: "/images/Backgrounds/Logo_dark.gif" },
   ];
   const imagesDarkMD = [
     { image: "/images/Backgrounds/Plantas_potabilizadoras_md.gif" },
     { image: "/images/Backgrounds/Industrias_md.gif" },
     { image: "/images/Backgrounds/Piletas_md.gif" },
-    { image: "/images/Backgrounds/Logo_dark_md.gif" },
+    // { image: "/images/Backgrounds/Logo_dark_md.gif" },
   ];
   const imagesDarkSM = [
     { image: "/images/Backgrounds/Plantas_potabilizadoras_sm.gif" },
     { image: "/images/Backgrounds/Industrias_sm.gif" },
     { image: "/images/Backgrounds/Piletas_sm.gif" },
-    { image: "/images/Backgrounds/Logo_dark_sm.gif" },
+    // { image: "/images/Backgrounds/Logo_dark_sm.gif" },
   ];
   const imagesLight = [
     { image: "/images/Backgrounds/Plantas_potabilizadoras_md.gif" },
@@ -106,6 +106,7 @@ export default function Carousel() {
               }`}
               style={{ width: "100%", height: "100%" }}
             >
+              
               <Image
                 alt="image"
                 src={image.image}
