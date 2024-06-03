@@ -79,8 +79,9 @@ const Contact = () => {
           </div>
           <div className="wow fadeInUp w-full dark:bg-gray-dark mb-5 rounded-sm bg-white px-8 py-11  lg:w-5/12 xl:w-4/12">
             <h3 className="text-2xl font-semibold text-dark dark:text-white pt-4 pb-1.5">Nuestra Ubicación</h3>
-            <h3 className="text-sm font-medium text-dark dark:text-white pt-1 pb-1">El Milagro 1460, camino a Virgen de la Merced</h3>
-            <h3 className="text-sm font-medium text-dark dark:text-white pt-1 pb-8">Córdoba Capital, Argentina</h3>
+            <a  href="https://www.google.com.ar/maps/place/Ardu+Hnos+SA+Productos+Quimicos+-+Hipoclorito+de+sodio+%22CLORO%22/@-31.399294,-64.0868918,17z/data=!3m1!4b1!4m6!3m5!1s0x9432970832de4cc7:0xef1e389a592f6527!8m2!3d-31.3992986!4d-64.0843169!16s%2Fg%2F11pwzgrf3z?entry=ttu" target="blank" className="hover:text-primary"><h3 className="text-sm font-medium text-dark dark:text-white pt-1 pb-1">El Milagro 1460, camino a Virgen de la Merced</h3>
+            </a>
+            <h3 className="text-sm font-medium  text-dark dark:text-white pt-1 pb-8">Córdoba Capital, Argentina</h3>
               <Map />
             
           </div>
