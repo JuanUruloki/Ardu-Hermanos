@@ -7,7 +7,7 @@ import productsData from "./productsData";
 const Products = () => {
   return (
     <section
-      className=" relative z-10 bg-opacity-80 bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28"
+      className=" relative z-10 bg-opacity-80 bg-cover bg-center bg-no-repeat shadow-2xl py-16 md:py-20 lg:py-28"
       style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')" }}
     >
       <div className="container ">
