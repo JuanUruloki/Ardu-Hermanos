@@ -39,12 +39,6 @@ const menuData: Menu[] = [
     path: "/about",
     newTab: false,
   },
-  // {
-  //   id: 33,
-  //   title: "Galeria",
-  //   path: "/blog",
-  //   newTab: false,
-  // },
   {
     id: 3,
     title: "Contacto",
