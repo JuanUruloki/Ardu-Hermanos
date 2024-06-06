@@ -10,7 +10,7 @@ import SectionTitle from "../Common/SectionTitle";
 const AboutSectionOne = () => {
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28 bg-cover bg-center bg-no-repeat bg-blueArdu" style={{ backgroundImage: "url('/images/Backgrounds/background6D.svg')"
+    <section id="about" className="pt-16 md:pt-20 lg:pt-28 shadow-2xl bg-cover bg-center bg-no-repeat bg-blueArdu" style={{ backgroundImage: "url('/images/Backgrounds/background6D.svg')"
   }}>
       <div className="container" >
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28" >
