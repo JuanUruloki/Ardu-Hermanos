@@ -4,37 +4,26 @@ import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { useMediaQuery } from "react-responsive";
 
-/**
- * Carousel component for nextJS and Tailwind.
- * Using external library react-easy-swipe for swipe gestures on mobile devices (optional)
- *
- * @param images - Array of images with src and alt attributes
- * @returns React component
- */
 export default function Carousel() {
   const imagesDark = [
     { image: "/images/Backgrounds/Plantas_potabilizadoras.gif" },
     { image: "/images/Backgrounds/Industrias.gif" },
     { image: "/images/Backgrounds/Piletas.gif" },
-    // { image: "/images/Backgrounds/Logo_dark.gif" },
   ];
   const imagesDarkMD = [
     { image: "/images/Backgrounds/Plantas_potabilizadoras_md.gif" },
     { image: "/images/Backgrounds/Industrias_md.gif" },
     { image: "/images/Backgrounds/Piletas_md.gif" },
-    // { image: "/images/Backgrounds/Logo_dark_md.gif" },
   ];
   const imagesDarkSM = [
     { image: "/images/Backgrounds/Plantas_potabilizadoras_sm.gif" },
     { image: "/images/Backgrounds/Industrias_sm.gif" },
     { image: "/images/Backgrounds/Piletas_sm.gif" },
-    // { image: "/images/Backgrounds/Logo_dark_sm.gif" },
   ];
   const imagesLight = [
     { image: "/images/Backgrounds/Plantas_potabilizadoras_md.gif" },
     { image: "/images/Backgrounds/Industrias.gif" },
     { image: "/images/Backgrounds/Piletas.gif" },
-    { image: "/images/Backgrounds/Logo_light.gif" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -151,20 +140,6 @@ export default function Carousel() {
         onClick={handleNextSlide}
         className="absolute inset-y-1/2 right-0 z-20 m-auto cursor-pointer text-5xl text-gray-400"
       />
-
-      {/* <div className="relative flex justify-center pb-10">
-        {images.map((_, index) => (
-          <div
-            className={`mx-1 mb-2 h-2 w-2 cursor-pointer rounded-full ${
-              index === currentSlide ? "bg-blue-800" : "bg-gray-300"
-            }`}
-            key={index}
-            onClick={() => {
-              setCurrentSlide(index);
-            }}
-          />
-        ))}
-      </div> */}
     </div>
   );
 }

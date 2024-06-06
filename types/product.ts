@@ -1,6 +1,7 @@
 export type Products = {
   id: number;
-  // icon: JSX.Element;
+  icon: any;
   title: string;
   paragraph: string;
+  href: string;
 };

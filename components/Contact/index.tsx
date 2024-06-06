@@ -1,7 +1,6 @@
 "use client";
+import { useState } from "react";
 import Map from "../Map/map";
-import NewsLatterBox from "./NewsLatterBox";
-import { useEffect, useState } from "react";
 
 const Contact = () => {
   const [data, setData] = useState({
