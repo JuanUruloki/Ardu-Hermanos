@@ -31,7 +31,7 @@ const Map = () => {
   })
   return (
     
-      <div className="h-96 w-full " ref={mapRef}/>
+      <div className="h-96 w-full rounded-lg" ref={mapRef}/>
   );
 };
 
