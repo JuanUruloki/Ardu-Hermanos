@@ -2,7 +2,20 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleProduct from "./SingleProduct";
 import productsData from "./productsData";
 
+const plantasPotabilizadoras = productsData.filter(product => product.paragraph === "PLANTAS POTABILIZADORAS")
+const industrias = productsData.filter(product => product.paragraph === "INDUSTRIAS")
+const piletas = productsData.filter(product => product.paragraph === "PILETAS")
 
+const renderSegment = (title, products) => (
+  <div className="mb-6 bg-greyArdu bg-opacity-30 rounded-lg px-6 py-3  ">
+  <p className="h-12 text-center text-4xl font-bold mb-2">{title}</p>
+  <div className="grid grid-cols-1 gap-x-6 gap-y-6 mb-6 text-justify md:grid-cols-2 lg:grid-cols-3">
+        {products.map((product) => (
+          <SingleProduct key={product.id} product={product} />
+        ))}
+      </div>
+      </div>
+)
 
 const Products = () => {
   return (
@@ -17,11 +30,14 @@ const Products = () => {
           center
         />
         <div className="-mt-10"></div>
-        <div className="grid grid-cols-1 gap-x-6 gap-y-6 text-justify md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-x-6 gap-y-6 text-justify md:grid-cols-2 lg:grid-cols-3">
           {productsData.map((product) => (
             <SingleProduct key={product.id} product={product} />
           ))}
-        </div>
+        </div> */}
+        {renderSegment("Plantas potabilizadoras",plantasPotabilizadoras)}
+        {renderSegment("Industrias",industrias)}
+        {renderSegment("Piletas",piletas)}
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg

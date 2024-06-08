@@ -32,7 +32,7 @@ const AboutSectionOne = () => {
                   src="/images/Brand/Planta2.gif"
                   alt="about-image"
                   fill
-                  className=" mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
+                  className=" mx-auto hidden max-w-full rounded-lg dark:block dark:shadow-contact lg:mr-0"
                 />
               </div>
           </div>
