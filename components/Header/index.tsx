@@ -48,7 +48,7 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          <div className={`relative -mx-8 mt-12 flex items-center justify-between ${!sticky ? "bg-gray-200 dark:bg-blueArdu": "bg-transparent pb-12"}`}>
+          <div className={`relative -mx-8 mt-12 flex items-center justify-between rounded-lg ${!sticky ? "bg-gray-200 dark:bg-blueArdu": "bg-transparent pb-12"}`}>
             <div className="flex w-full h-24 items-center justify-between px-4">
               <div>
                 <button
@@ -108,7 +108,7 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-lg lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-chalkArdu"
+                                ? "text-primary  dark:text-chalkArdu dark:hover:text-primary"
                                 : "text-dark hover:text-primary dark:text-chalkArdu dark:hover:text-primary"
                             }`}
                           >

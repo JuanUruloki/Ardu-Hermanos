@@ -78,7 +78,7 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="flex w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="wow fadeInUp  mb-12 rounded-sm bg-white px-8 py-14 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="wow fadeInUp  mb-12 rounded-lg bg-white px-8 py-14 shadow-contact dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
               "
             >
@@ -90,9 +90,9 @@ const Contact = () => {
                 consulta.
               </p>
               <form>
-                <div className="-mx-4 flex flex-wrap">
+                <div className="-mx-4 flex flex-wrap ">
                   <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
+                    <div className="mb-8 ">
                       <label
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
@@ -104,7 +104,7 @@ const Contact = () => {
                         name="name"
                         value={data?.name}
                         placeholder="Ingresa tu nombre"
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        className="w-full rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                         onChange={handleChange}
                         onBlur={handleBlur}
                       />
@@ -126,7 +126,7 @@ const Contact = () => {
                         name="email"
                         value={data?.email}
                         placeholder="Ingresa tu email"
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        className="w-full rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                         onChange={handleChange}
                         onBlur={handleBlur}
                       />
@@ -148,7 +148,7 @@ const Contact = () => {
                         value={data?.message}
                         rows={5}
                         placeholder="Ingresa tu mensaje..."
-                        className="w-full resize-none rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        className="w-full resize-none rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                         onChange={handleChange}
                         onBlur={handleBlur}
                       ></textarea>
@@ -161,7 +161,7 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={!isFormValid}
-                      className={`rounded-sm px-9 py-4 text-base font-medium text-white shadow-submit duration-300 dark:shadow-submit-dark ${
+                      className={`rounded-lg px-9 py-4 text-base font-medium text-white shadow-submit duration-300 dark:shadow-submit-dark ${
                         isFormValid
                           ? "bg-primary hover:bg-primary/90"
                           : "cursor-not-allowed bg-gray-400"
@@ -174,7 +174,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="wow fadeInUp mb-5 w-full rounded-sm bg-white px-8 py-11 dark:bg-gray-dark  lg:w-5/12 xl:w-4/12">
+          <div className="wow fadeInUp mb-5 w-full rounded-lg shadow-contact bg-white px-8 py-11 dark:bg-gray-dark  lg:w-5/12 xl:w-4/12">
             <h3 className="pb-1.5 pt-4 text-2xl font-semibold text-dark dark:text-white">
               Nuestra Ubicación
             </h3>
