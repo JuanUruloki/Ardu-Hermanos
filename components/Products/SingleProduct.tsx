@@ -9,7 +9,7 @@ const SingleProduct = ({ product }: { product: Products }) => {
       <div className="wow fadeInUp flex flex-col items-center justify-center shadow-contact hover:shadow-productsHover rounded-lg   hover:scale-105  bg-blueArdu bg-opacity-70" data-wow-delay=".15s" >
       <div className="mb-2 pt-5 flex flex-col  items-center  text-3xl justify-center rounded-md  text-blue-500">
           {icon}
-          <p className="text-xs font-bold pt-1">{paragraph}</p>
+          {/* <p className="text-xs font-bold pt-1">{paragraph}</p> */}
         </div>
         <h3 className="mb-5 text-xl font-bold text-center text-black dark:text-chalkArdu sm:text-2xl lg:text-xl xl:text-2xl">
           {title}
