@@ -71,7 +71,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="overflow-hidden bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28"
+      className="overflow-hidden bg-cover bg-center bg-no-repeat shadow-section2 py-16 md:py-20 lg:py-28"
       style={{ backgroundImage: "url('/images/Backgrounds/background6C.svg')" }}
     >
       <div className="container">

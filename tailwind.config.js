@@ -69,7 +69,9 @@ module.exports = {
         "btn-hover": "0px 1px 2px rgba(0, 0, 0, 0.15)",
         "btn-light": "0px 1px 2px rgba(0, 0, 0, 0.1)",
         productsHover: "0px 0px 15px 2px rgba(230,230,230,0.50)",
-        contact: "0px 0px 15px 2px rgba(0,0,0,0.50)"
+        contact: "0px 0px 15px 10px rgba(0,0,0,0.50)",
+        section:"0px 10px 40px 20px rgba(0,0,0,0.60)" ,
+        section2:"0px -8px 40px 20px rgba(0,0,0,0.60)" ,
       },
       dropShadow: {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
