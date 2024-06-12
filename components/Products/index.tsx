@@ -20,7 +20,7 @@ const renderSegment = (title, products) => (
 const Products = () => {
   return (
     <section
-      className=" relative z-10 bg-opacity-80 bg-cover bg-center bg-no-repeat shadow-2xl py-16 md:py-20 lg:py-28"
+      className=" relative z-10 bg-opacity-80 bg-cover bg-center bg-no-repeat shadow-section py-16 md:py-20 lg:py-28"
       style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')" }}
     >
       <div className="container ">
@@ -30,11 +30,6 @@ const Products = () => {
           center
         />
         <div className="-mt-10"></div>
-        {/* <div className="grid grid-cols-1 gap-x-6 gap-y-6 text-justify md:grid-cols-2 lg:grid-cols-3">
-          {productsData.map((product) => (
-            <SingleProduct key={product.id} product={product} />
-          ))}
-        </div> */}
         {renderSegment("Plantas potabilizadoras",plantasPotabilizadoras)}
         {renderSegment("Industrias",industrias)}
         {renderSegment("Piletas",piletas)}
