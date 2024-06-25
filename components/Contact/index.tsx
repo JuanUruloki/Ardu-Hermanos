@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Map from "../Map/map";
+import axios from "axios";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -20,6 +21,21 @@ const Contact = () => {
     email: false,
     message: false,
   });
+
+  const [message, setMessage] = useState("");
+
+  const validate = () => {
+    const newErrors = { name: "", email: "", message: "" };
+    if (!data.name.trim()) newErrors.name = "El nombre es obligatorio";
+    if (!data.email.trim()) {
+      newErrors.email = "El email es obligatorio";
+    } else if (!/\S+@\S+\.\S+/.test(data.email)) {
+      newErrors.email = "El email no es válido";
+    }
+    if (!data.message.trim()) newErrors.message = "El mensaje es obligatorio";
+    setErrors(newErrors);
+    return Object.values(newErrors).every((error) => error === "");
+  };
 
   const handleBlur = (
     event: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -43,23 +59,35 @@ const Contact = () => {
     validate();
   };
 
-  const validate = () => {
-    const newErrors = { name: "", email: "", message: "" };
-    if (!data.name.trim()) newErrors.name = "El nombre es obligatorio";
-    if (!data.email.trim()) {
-      newErrors.email = "El email es obligatorio";
-    } else if (!/\S+@\S+\.\S+/.test(data.email)) {
-      newErrors.email = "El email no es válido";
-    }
-    if (!data.message.trim()) newErrors.message = "El mensaje es obligatorio";
-    setErrors(newErrors);
-    return Object.values(newErrors).every((error) => error === "");
-  };
-
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (validate()) {
-      // lógica para enviar formulario
+      try {
+        const form = event.currentTarget as HTMLFormElement;
+        const formData = new FormData(form);
+        const response = await axios.post(form.action, formData, {
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        const result = response.data;
+        if (response.status !== 200) {
+          setMessage(
+            result.errors.map((error: any) => error.message).join(", "),
+          );
+          return false;
+        }
+        setMessage("Se ha enviado tu correo satisfactoriamente");
+      } catch (error: any) {
+        setMessage(
+          error.response?.data?.errors
+            ? error.response.data.errors
+                .map((err: any) => err.message)
+                .join(", ")
+            : "Ocurrió un error al enviar el formulario",
+        );
+      }
       console.log("Formulario enviado", data);
     }
   };
@@ -71,7 +99,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="overflow-hidden bg-cover bg-center bg-no-repeat shadow-section2 py-16 md:py-20 lg:py-28"
+      className="overflow-hidden bg-cover bg-center bg-no-repeat py-16 shadow-section2 md:py-20 lg:py-28"
       style={{ backgroundImage: "url('/images/Backgrounds/background6C.svg')" }}
     >
       <div className="container">
@@ -89,7 +117,11 @@ const Contact = () => {
                 Nuestro equipo de atención al cliente está esperando tu
                 consulta.
               </p>
-              <form>
+              <form
+                action="https://formspree.io/f/xrbzzojr"
+                method="POST"
+                onSubmit={handleSubmit}
+              >
                 <div className="-mx-4 flex flex-wrap ">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8 ">
@@ -155,7 +187,7 @@ const Contact = () => {
                       {errors.message && touched.message && (
                         <p className="text-sm text-red-500">{errors.message}</p>
                       )}
-                    </div> 
+                    </div>
                   </div>
                   <div className="w-full px-4">
                     <button
@@ -174,7 +206,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="wow fadeInUp mb-5 w-full rounded-lg shadow-contact bg-white px-8 py-11 dark:bg-gray-dark  lg:w-5/12 xl:w-4/12">
+          <div className="wow fadeInUp mb-5 w-full rounded-lg bg-white px-8 py-11 shadow-contact dark:bg-gray-dark  lg:w-5/12 xl:w-4/12">
             <h3 className="pb-1.5 pt-4 text-2xl font-semibold text-dark dark:text-white">
               Nuestra Ubicación
             </h3>
