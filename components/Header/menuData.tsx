@@ -3,31 +3,31 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
+    title: "HOME",
     path: "/",
     newTab: false,
   },
   
   {
     id: 4,
-    title: "Productos",
+    title: "PRODUCTOS",
     newTab: false,
     submenu: [
       {
         id: 41,
-        title: "Plantas potabilizadoras",
+        title: "PLANTAS POTABILIZADORAS",
         path: "/plantasPotabilizadoras",
         newTab: false,
       },
       {
         id: 42,
-        title: "Industrias",
+        title: "INDUSTRIAS",
         path: "/industrias",
         newTab: false,
       },
       {
         id: 43,
-        title: "Piletas",
+        title: "PILETAS",
         path: "/piletas",
         newTab: false,
       },
@@ -35,13 +35,13 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Empresa",
+    title: "EMPRESA",
     path: "/about",
     newTab: false,
   },
   {
     id: 3,
-    title: "Contacto",
+    title: "CONTACTO",
     path: "/contact",
     newTab: false,
   },

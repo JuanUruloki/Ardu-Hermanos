@@ -32,6 +32,9 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      fontFamily: {
+        header:['Bebas Neue Light', 'Bebas Neue' ]
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
