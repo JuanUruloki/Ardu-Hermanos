@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp dark:bg-blueArdu relative z-10 bg-white pt-16 md:pt-20 lg:pt-24 h-min"
+        className="wow fadeInUp dark:bg-darkBlue relative z-10 bg-white pt-12 md:pt-20 lg:pt-24 h-min"
         data-wow-delay=".1s"
       >
         <div className="container">
           <div className="-mx-4 -mb-16 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
+              <div className="mb-20 max-w-[360px] lg:mb-16">
                 <Link href="/" className="-mb-48 -mt-20 -ml-28 inline-block">
                   <Image
                     src="/images/logo/logo-2.svg"
@@ -31,13 +31,13 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+            <div className="w-full px-4 xs:-mt-28 md:mt-0 lg:-mt-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="-mb-12 -mt-8 lg:mb-16 text-xm">
                 <ul>
                                     <li>
                     <a
                       href="/about"
-                      className="dark:text-chalkArdu mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="dark:text-chalkArdu mb-1 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Empresa
                     </a>
@@ -45,16 +45,16 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                      className="dark:text-chalkArdu mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="dark:text-chalkArdu mb-1 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Ponerse en contacto
                     </a>
                   </li>
                   <li>
                     <p
-                      className="text-xs dark:text-chalkArdu mb-4 inline-block text-body-color duration-300"
+                      className="text-xs dark:text-chalkArdu mb-1 inline-block text-body-color duration-300"
                     >
-                     🌍 El Milagro 1460, camino a Virgen de la Merced, Córdoba Capital, Argentina
+                     📍 El Milagro 1460, camino a Virgen de la Merced, Córdoba Capital, Argentina
                     </p>
                   </li>
                 </ul>
@@ -63,80 +63,6 @@ const Footer = () => {
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-        </div>
-        <div className="absolute right-0 top-14 z-[-1]">
-          <svg
-            width="55"
-            height="99"
-            viewBox="0 0 55 99"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
-            <mask
-              id="mask0_94:899"
-              style={{ maskType: "alpha" }}
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="99"
-              height="99"
-            >
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="#4A6CF7"
-              />
-            </mask>
-            <g mask="url(#mask0_94:899)">
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="url(#paint0_radial_94:899)"
-              />
-              <g opacity="0.8" filter="url(#filter0_f_94:899)">
-                <circle cx="53.8676" cy="26.2061" r="20.3824" fill="white" />
-              </g>
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_94:899"
-                x="12.4852"
-                y="-15.1763"
-                width="82.7646"
-                height="82.7646"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="10.5"
-                  result="effect1_foregroundBlur_94:899"
-                />
-              </filter>
-              <radialGradient
-                id="paint0_radial_94:899"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(49.5 49.5) rotate(90) scale(53.1397)"
-              >
-                <stop stopOpacity="0.47" />
-                <stop offset="1" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-          </svg>
         </div>
         <div className="absolute bottom-24 left-0 z-[-1]">
           <svg
