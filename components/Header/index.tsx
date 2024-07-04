@@ -73,7 +73,7 @@ const Header = () => {
                     }`}
                   />
                 </button>
-                <div className="hidden absolute lg:block pt-9 pl-36  ">
+                <div className="hidden absolute lg:block lg:-ml-24 xl:ml-0 pt-9 pl-36  ">
                     <a href="/">
 
                     <Image
@@ -93,7 +93,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-20 ">
+                  <ul className="block lg:flex lg:space-x-5 lg:-mr-36 xl:mr-0 xl:space-x-14 ">
                   
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative ">
