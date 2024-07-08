@@ -13,6 +13,8 @@ module.exports = {
     },
 
     screens: {
+      xxs: "350px",
+      // => @media (min-width: 450px) { ... }
       xs: "450px",
       // => @media (min-width: 450px) { ... }
 
@@ -28,12 +30,14 @@ module.exports = {
       xl: "1200px",
       // => @media (min-width: 1200px) { ... }
 
-      "2xl": "1400px",
+      xxl: "1400px",
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
       fontFamily: {
-        header:['Bebas Neue Light', 'Bebas Neue' ]
+        header:['Bebas Neue Light', 'sans-serif' ],
+        body: ['Microsoft PhagsPa', 'sans-serif'],
+        titles:['Microsoft PhagsPa Bold', 'sans-serif']
       },
       colors: {
         current: "currentColor",
