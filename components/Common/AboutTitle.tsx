@@ -14,14 +14,14 @@ const AboutTitle = ({
   return (
     <>
       <div
-        className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""}`}
+        className={`w-full ${center ? "mx-auto text-center" : ""}`}
         data-wow-delay=".1s"
         style={{ maxWidth: width, marginBottom: mb }}
       >
-        <h2 className="mb-6 text-3xl font-extrabold text-center !leading-tight text-blueArdu dark:text-blueArdu sm:text-4xl md:text-[45px]">
+        <h2 className="mb-6 xxs:text-[20px] xxs:px-20 xs:text-[30px] xs:px-16 sm:text-[40px] sm:px-20 md:text-[50px] md:px-24 lg:text-[50px] lg:px-8 xl:text-[70px] xxl:px-14 font-titles text-center !leading-none text-darkBlue dark:text-black ">
           {title}
         </h2>
-        <p className="text-base font-bold !leading-relaxed text-blueArdu md:text-xl">
+        <p className="text-lg xxs:text-[15px] xs:text-[18px] sm:text-[20px] md:text-[20px] lg:text-[20px] xl:text-[22px] font-body !leading-snug text-black md:text-sm">
           {paragraph}
         </p>
       </div>

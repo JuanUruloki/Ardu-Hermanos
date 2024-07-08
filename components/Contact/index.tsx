@@ -110,10 +110,10 @@ const Contact = () => {
               data-wow-delay=".15s
               "
             >
-              <h2 className="mb-3 pl-2 text-3xl font-bold text-black dark:text-white sm:text-3xl lg:text-3xl xl:text-3xl">
+              <h2 className="mb-3 pl-2 text-3xl font-titles text-black dark:text-white sm:text-3xl lg:text-3xl xl:text-3xl">
                 Necesitas ayuda? Contactanos
               </h2>
-              <p className="mb-12 pl-2 text-base font-medium text-withe">
+              <p className="mb-12 pl-2 text-base font-body text-withe">
                 Nuestro equipo de atención al cliente está esperando tu
                 consulta.
               </p>
@@ -127,7 +127,7 @@ const Contact = () => {
                     <div className="mb-6 -mt-4 ">
                       <label
                         htmlFor="name"
-                        className="mb-3 pl-2 block text-lg font-light text-dark dark:text-white"
+                        className="mb-3 pl-2 block text-lg font-body text-dark dark:text-white"
                       >
                         Nombre
                       </label>
@@ -149,7 +149,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="email"
-                        className="mb-3 pl-2 block text-lg font-light text-dark dark:text-white"
+                        className="mb-3 pl-2 block text-lg font-body text-dark dark:text-white"
                       >
                         Email
                       </label>
@@ -171,7 +171,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="message"
-                        className="mb-3 pl-2 block text-lg font-light text-dark dark:text-white"
+                        className="mb-3 pl-2 block text-lg font-body text-dark dark:text-white"
                       >
                         Mensaje
                       </label>
@@ -193,7 +193,7 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={!isFormValid}
-                      className={`rounded-lg h-16 w-56 text-3xl font-medium text-white font-header duration-300 dark:shadow-submit-dark ${
+                      className={`rounded-lg h-16 w-56 text-3xl text-white font-header duration-300 dark:shadow-submit-dark ${
                         isFormValid
                           ? "bg-lightBlue hover:bg-primary/90"
                           : "cursor-not-allowed bg-gray"
@@ -207,7 +207,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="wow fadeInUp mb-5 w-full rounded-lg bg-white px-8 py-11 dark:bg-transparent xs:px-[50px] xs:-mt-20 sm:px-[70px] sm:-mt-20 lg:px-[0px] lg:pt-[123px] lg:w-5/12 xl:w-4/12">
-            <h3 className="pb-1.5 pt-3 pl-2 text-3xl font-bold text-dark dark:text-white">
+            <h3 className="pb-1.5 pt-3 pl-2 text-3xl font-titles text-dark dark:text-white">
               Nuestra Ubicación
             </h3>
             <a
@@ -215,11 +215,11 @@ const Contact = () => {
               target="blank"
               className="hover:text-primary"
             >
-              <h3 className="pb-1 pt-1 pl-2 text-sm font-medium text-dark dark:text-white">
+              <h3 className="pb-1 pt-1 pl-2 text-sm font-body text-dark dark:text-white">
                 El Milagro 1460, camino a Virgen de la Merced
               </h3>
             </a>
-            <h3 className="pb-8 pt-1 pl-2 text-sm font-medium text-dark dark:text-white">
+            <h3 className="pb-8 pt-1 pl-2 text-sm font-body text-dark dark:text-white">
               Córdoba Capital, Argentina
             </h3>
             <Map />

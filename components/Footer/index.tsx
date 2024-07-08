@@ -37,7 +37,7 @@ const Footer = () => {
                                     <li>
                     <a
                       href="/about"
-                      className="dark:text-chalkArdu mb-1 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="dark:text-chalkArdu mb-1 inline-block font-body text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Empresa
                     </a>
@@ -45,14 +45,14 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                      className="dark:text-chalkArdu mb-1 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="dark:text-chalkArdu mb-1 inline-block font-body text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Ponerse en contacto
                     </a>
                   </li>
                   <li>
                     <p
-                      className="text-xs dark:text-chalkArdu mb-1 inline-block text-body-color duration-300"
+                      className="text-xs font-body dark:text-chalkArdu mb-1 inline-block text-body-color duration-300"
                     >
                      📍 El Milagro 1460, camino a Virgen de la Merced, Córdoba Capital, Argentina
                     </p>

@@ -7,7 +7,21 @@
 
 @font-face {
   font-family: 'Bebas Neue Light';
-  src: url('/fonts/BebasNeue Light.ttf');
+  src: url('/fonts/BebasNeue Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Microsoft PhagsPa';
+  src: url('/fonts/phagspa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Microsoft PhagsPa Bold';
+  src: url('/fonts/phagspab.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @keyframes fadeIn {
@@ -26,6 +40,18 @@
 @layer base {
   body {
     font-family: "Inter", sans-serif;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-about-lg{
+    background-image: url('/images/Backgrounds/About.jpg');
+  }
+}
+
+@media (max-width: 991px) {
+  .bg-about-sm {
+    background-image: url('/images/Backgrounds/About2.jpg');
   }
 }
 
