@@ -7,7 +7,6 @@ const AboutSectionOne = () => {
 
   return (
     <section id="about" className="bg-cover bg-left-top lg:bg-left-bottom bg-no-repeat overflow-hidden bg-white bg-about-lg bg-about-sm" 
-    // style={{ backgroundImage: "url('/images/Backgrounds/About.jpg')"}}
   >
       <div className="" >
         <div className="h-full border-b border-body-color/[.15] dark:border-white/[.15]" >

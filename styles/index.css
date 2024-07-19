@@ -47,11 +47,35 @@
   .bg-about-lg{
     background-image: url('/images/Backgrounds/About.jpg');
   }
+  .bg-products-lg{
+    background-image: url('/images/Products/Productos.jpg');
+  }
+  .bg-plantas-lg{
+    background-image: url('/images/Products/PlantasPotabilizadoras.jpg');
+  }
+  .bg-piletas-lg{
+    background-image: url('/images/Products/Piletas.jpg');
+  }
+  .bg-industrias-lg{
+    background-image: url('/images/Products/Industrias.jpg');
+  }
 }
 
 @media (max-width: 991px) {
   .bg-about-sm {
     background-image: url('/images/Backgrounds/About2.jpg');
+  }
+  .bg-products-sm {
+    background-image: url('/images/Products/ProductosMobile.jpg');
+  }
+  .bg-plantas-sm {
+    background-image: url('/images/Products/PlantasPotabilizadorasMobile.jpg');
+  }
+  .bg-piletas-sm {
+    background-image: url('/images/Products/PiletasMobile.jpg');
+  }
+  .bg-industrias-sm {
+    background-image: url('/images/Products/IndustriasMobile.jpg');
   }
 }
 
