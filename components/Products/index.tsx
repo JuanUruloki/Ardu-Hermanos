@@ -19,15 +19,11 @@ const Products = () => {
         <div
           className="flex flex-col-reverse lg:flex-row items-center justify-end xxs:h-[1300px] lg:h-[830px] bg-cover xxs:bg-center bg-left-top bg-products-lg bg-products-sm"
         >
-          <div className="w-full h-auto md:w-1/2 items-center lg:px-6 xxs:pt-20 md:pt-28 lg:pt-48">
+          <div className="w-full h-auto md:w-1/2 items-center  lg:pr-28 xxs:pt-20 md:pt-28 lg:pt-48">
             <ProductsTitle
               title="NUESTROS PRODUCTOS"
-              paragraph1="En nuestra empresa, ofrecemos una gama completa de productos
-              químicos diseñados específicamente para plantas potabilizadoras."
-              paragraph2="Desde coagulantes y floculantes hasta desinfectantes de última
-              generación, nos comprometemos a proporcionar soluciones de alta
-              calidad que garanticen la pureza y seguridad del agua potable para
-              comunidades y municipios"
+              paragraph1="En nuestra empresa, ofrecemos una gama completa de productos químicos de alta calidad para plantas potabilizadoras, industrias y piletas."
+              paragraph2="Garantizamos la pureza y seguridad del agua potable, optimizamos procesos productivos con soluciones integrales que mejoran la eficiencia y la rentabilidad, y mantenemos el agua de las piletas cristalina y segura. Nuestro compromiso es proporcionar productos eficaces que satisfagan tus necesidades específicas y mejoren tu calidad de vida."
               center
             />
           </div>
