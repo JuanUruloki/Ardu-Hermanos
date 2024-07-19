@@ -1,92 +1,100 @@
-import SectionTitle from "../Common/SectionTitle";
-import SingleProduct from "./SingleProduct";
+import Image from "next/image";
+import ProductsTitle from "../Common/ProductsTitle";
 import productsData from "./productsData";
 
-const plantasPotabilizadoras = productsData.filter(product => product.paragraph === "PLANTAS POTABILIZADORAS")
-const industrias = productsData.filter(product => product.paragraph === "INDUSTRIAS")
-const piletas = productsData.filter(product => product.paragraph === "PILETAS")
-
-const renderSegment = (title, products) => (
-  <div className="mb-6 bg-greyArdu bg-opacity-30 rounded-lg px-6 py-3  ">
-  <p className="h-12 text-center text-4xl font-bold mb-2">{title}</p>
-  <div className="grid grid-cols-1 gap-x-6 gap-y-6 mb-6 text-justify md:grid-cols-2 lg:grid-cols-3">
-        {products.map((product) => (
-          <SingleProduct key={product.id} product={product} />
-        ))}
-      </div>
-      </div>
-)
-
 const Products = () => {
+  const plantasPotabilizadoras = productsData.filter(
+    (product) => product.paragraph === "PLANTAS POTABILIZADORAS",
+  );
+  const industrias = productsData.filter(
+    (product) => product.paragraph === "INDUSTRIAS",
+  );
+  const piletas = productsData.filter(
+    (product) => product.paragraph === "PILETAS",
+  );
+
   return (
-    <section
-      className=" relative z-10 bg-opacity-80 bg-cover bg-center bg-no-repeat shadow-section py-16 md:py-20 lg:py-28"
-      style={{ backgroundImage: "url('/images/Backgrounds/background6B.svg')" }}
-    >
-      <div className="container ">
-        <SectionTitle
-          title="Nuestros Productos"
-          paragraph="Soluciones para todas las necesidades"
-          center
-        />
-        <div className="-mt-10"></div>
-        {renderSegment("Plantas potabilizadoras",plantasPotabilizadoras)}
-        {renderSegment("Industrias",industrias)}
-        {renderSegment("Piletas",piletas)}
-      </div>
-      <div className="absolute right-0 top-5 z-[-1]">
-        <svg
-          width="1038"
-          height="1331"
-          viewBox="0 0 238 531"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <section className="relative z-10 bg-opacity-80 from-gray to-white bg-cover bg-center bg-no-repeat py-0 dark:bg-white ">
+      <div className="flex h-full flex-col">
+        <div
+          className="flex flex-col-reverse lg:flex-row items-center justify-end xxs:h-[1300px] lg:h-[830px] bg-cover xxs:bg-center bg-left-top bg-products-lg bg-products-sm"
         >
-          <rect
-            opacity="0.3"
-            x="422.819"
-            y="-70.8145"
-            width="196"
-            height="541.607"
-            rx="2"
-            transform="rotate(51.2997 422.819 -70.8145)"
-            fill="url(#paint0_linear_83:2)"
-          />
-          <rect
-            opacity="0.3"
-            x="426.568"
-            y="144.886"
-            width="59.7544"
-            height="541.607"
-            rx="2"
-            transform="rotate(51.2997 426.568 144.886)"
-            fill="url(#paint1_linear_83:2)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_83:2"
-              x1="517.152"
-              y1="-251.373"
-              x2="517.152"
-              y2="459.865"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#121D2F" />
-              <stop offset="1" stopColor="#121D2F" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_83:2"
-              x1="455.327"
-              y1="-35.673"
-              x2="455.327"
-              y2="675.565"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#121D2F" />
-              <stop offset="1" stopColor="#121D2F" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
+          <div className="w-full h-auto md:w-1/2 items-center lg:px-6 xxs:pt-20 md:pt-28 lg:pt-48">
+            <ProductsTitle
+              title="NUESTROS PRODUCTOS"
+              paragraph1="En nuestra empresa, ofrecemos una gama completa de productos
+              químicos diseñados específicamente para plantas potabilizadoras."
+              paragraph2="Desde coagulantes y floculantes hasta desinfectantes de última
+              generación, nos comprometemos a proporcionar soluciones de alta
+              calidad que garanticen la pureza y seguridad del agua potable para
+              comunidades y municipios"
+              center
+            />
+          </div>
+          <div className="absolute xs:top-[-90px] xxs:top-[-75px] right-0 w-full md:w-2/3 lg:w-1/2 xxl:w-2/5 xs:h-[180px] xxs:h-[150px] bg-gradient-to-r from-gray via-gray  flex flex-row shadow-lg overflow-visible">
+        <div className="w-3/5 pl-10 flex flex-col items-start justify-center relative z-10">
+          <p className="xl:text-3xl md:text-2xl xs:text-xl xxs:text-lg font-titles">SERVICIO A GRANEL</p>
+          <p className="xl:text-xl md:text-lg xs:text-base xxs:text-sm font-body">Ofrecemos venta a granel de productos quimicos para plantas potabilizadoras e industrias</p>
+        </div>
+        <div className="absolute top-[-130px] right-0 w-2/5 h-[300px] bg-contain bg-center bg-no-repeat overflow-visible"
+        style={{ backgroundImage: "url('/images/Products/camion.png')" }}
+        >
+        </div>
+      </div>
+        </div>
+        <div className="flex flex-wrap w-full">
+          <div
+            className="mb-24 flex flex-col h-[830px] w-full justify-start items-center xxs:pt-20 lg:flex-row lg:justify-start lg:py-0 bg-cover bg-center bg-plantas-lg bg-plantas-sm"
+          >
+            <div className="flex w-full md:w-1/2 items-center justify-center px-6 md:px-20 text-black ">
+              <ul className="text-2xl xs:text-4xl lg:text-6xl">
+                <p className="font-titles">PLANTAS</p>
+                <p className="font-body mb-4 text-xl xs:text-4xl lg:text-5xl tracking-widest">
+                  POTABILIZADORAS
+                </p>
+                {plantasPotabilizadoras.map((product) => (
+                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-2xl lg:text-3xl font-bold" key={product.id}>
+                    {product.title}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div
+            className="mb-24 flex flex-col h-[830px] w-full justify-start items-center xxs:pt-20  lg:flex-row lg:justify-end lg:py-0 bg-cover bg-center bg-piletas-lg bg-piletas-sm"
+          >
+            <div className="flex w-full md:w-1/2 items-center justify-center px-6 md:px-20 font-body text-xl md:text-2xl text-black">
+              <ul className="text-2xl xs:text-4xl lg:text-6xl">
+                <p className="font-titles">MANTENIMIENTO</p>
+                <p className="font-body mb-4 text-xl xs:text-4xl lg:text-5xl tracking-widest">DE PILETAS</p>
+                {piletas.map((product) => (
+                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-2xl lg:text-3xl font-bold" key={product.id}>
+                    {product.title}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div
+            className="flex fle-col h-[830px] w-full justify-center items-start xxs:pt-20 lg:flex-row lg:justify-start lg:items-center lg:py-0 bg-cover bg-center bg-industrias-lg bg-industrias-sm"
+            
+          >
+            <div className="flex w-full md:w-1/2 items-center justify-center px-6 lg:px-20 font-body text-xl md:text-2xl text-black">
+              <ul className="text-2xl xs:text-4xl lg:text-6xl">
+                <p className="font-titles">PRODUCTOS</p>
+                <p className="font-body mb-4 text-xl xs:text-4xl lg:text-5xl tracking-widest">
+                  PARA INDUSTRIAS
+                </p>
+                {industrias.map((product) => (
+                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-2xl lg:text-3xl font-bold" key={product.id}>
+                    {product.title}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
