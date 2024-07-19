@@ -1,22 +1,27 @@
-import Carousel from "@/components/Carousel";
-// import { useTheme } from "next-themes";
-
+import RotatingText from "../Products/rotatingText";
 
 const Hero = () => {
-  // const {theme} = useTheme()
   return (
-    <>
-      <section
-        id="home"
-        
-        className="relative z-10 overflow-hidden bg-center bg-cover bg-no-repeat -mb-2 h-[80vh] pb-16 shadow-2xl pt-[200px] bg-light dark:bg-blueArdu md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
-        style={{ backgroundImage: "url('/images/Backgrounds/Piletas2.gif')"}}
-        >
-          {/* <div className=" relative z-10 overflow-hidden shadow-2xl h-[100vh] bg-center -mt-52"> */}
-            {/* <Carousel/> */}
-          {/* </div> */}
-      </section>
-    </>
+    <section
+      id="home"
+      className="relative z-10 overflow-hidden h-[80vh] pb-16 pt-[200px] bg-light dark:bg-blueArdu md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
+    >
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/videos/Hero.mp4"
+        />
+      </div>
+      
+      {/* RotatingText Component */}
+      <div className="relative z-20 flex items-center justify-start pl-44 w-full h-full">
+        <RotatingText />
+      </div>
+    </section>
   );
 };
 
