@@ -6,18 +6,25 @@ const Hero = () => {
       id="home"
       className="relative z-10 overflow-hidden h-[80vh] pb-16 pt-[200px] bg-light dark:bg-blueArdu md:pb-[0px] md:pt-[200px] xl:pb-[0px] xl:pt-[200px] 2xl:pb-[0px] 2xl:pt-[200px]"
     >
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden w-full h-full">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
           src="/videos/Hero.mp4"
+        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"
+          src="/videos/HeroMobile.mp4"
         />
       </div>
       
-      {/* RotatingText Component */}
       <div className="relative z-20 flex flex-row items-center justify-start w-full h-full">
         <RotatingText />
       </div>
