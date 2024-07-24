@@ -17,9 +17,9 @@ const Products = () => {
     <section className="relative z-10 bg-opacity-80 from-gray to-white bg-cover bg-center bg-no-repeat py-0 dark:bg-white ">
       <div className="flex h-full flex-col">
         <div
-          className="flex flex-col-reverse lg:flex-row items-center justify-end xxs:h-[1300px] lg:h-[830px] bg-cover xxs:bg-center bg-left-top bg-products-lg bg-products-sm"
+          className="flex flex-col-reverse lg:flex-row items-center justify-end xxs:h-[1300px] lg:h-[1050px] bg-cover xxs:bg-bottom lg:bg-top bg-products-lg bg-products-sm"
         >
-          <div className="w-full h-auto md:w-1/2 items-center  lg:pr-28 xxs:pt-20 md:pt-28 lg:pt-48">
+          <div className="w-full h-full md:w-1/2 items-center justify-center  lg:pr-28 xxs:pt-24 md:pt-28 lg:pt-48">
             <ProductsTitle
               title="NUESTROS PRODUCTOS"
               paragraph1="En nuestra empresa, ofrecemos una gama completa de productos químicos de alta calidad para plantas potabilizadoras, industrias y piletas."
@@ -34,61 +34,91 @@ const Products = () => {
         </div>
         <div className="absolute top-[-130px] right-0 w-2/5 h-[300px] bg-contain bg-center bg-no-repeat overflow-visible"
         style={{ backgroundImage: "url('/images/Products/camion.png')" }}
-        >
-        </div>
+        />
       </div>
         </div>
-        <div className="flex flex-wrap w-full">
-          <div
-            className="mb-24 flex flex-col h-[830px] w-full justify-start items-center xxs:pt-20 lg:flex-row lg:justify-start lg:py-0 bg-cover bg-center bg-plantas-lg bg-plantas-sm"
-          >
-            <div className="flex w-full md:w-1/2 items-center justify-center px-6 md:px-20 text-black ">
-              <ul className="text-2xl xs:text-4xl lg:text-6xl">
-                <p className="font-titles">PLANTAS</p>
-                <p className="font-body mb-4 text-xl xs:text-4xl lg:text-5xl tracking-widest">
+        <div className="flex flex-col lg:flex-row w-full h-auto xxs:h-[1800px] lg:h-[700px] xl:h-[900px] bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/Products/segmentos.png')"}}
+        >
+          <div className="flex flex-col items-center  h-1/3 lg:w-1/3 lg:h-full">
+          <div className="flex flex-col items-center h-1/2 ">
+            <div className=" flex flex-col items-center justify-center overflow-visible lg:-mt-12 xxs:h-[250px] xxs:w-[250px] xl:h-[400px] xl:w-[400px] rounded-3xl  bg-lightBlue">
+                <p className=" xxs:text-4xl xl:text-7xl font-titles">PLANTAS</p>
+                <p className="font-body mb-4 xxs:text-lg xl:text-xl tracking-widest">
                   POTABILIZADORAS
                 </p>
+            </div>
+          </div>
+          <div
+            className="flex flex-col h-1/2  justify-start items-center xxs:pt-20 lg:justify-start  bg-transparent"
+          >
+            <div className="overflow-visible bg-contain bg-top bg-no-repeat xxs:h-[125px] xxs:w-[300px] xl:h-[200px] xl:w-[500px] xxs:-mt-[200px] lg:-mt-[280px] xl:-mt-[240px] xxs:mb-4 xl:mb-6"
+        style={{ backgroundImage: "url('/images/Products/camionGrande.png')" }}
+            />
+            <div className="flex w-full items-center justify-start mx-0 px-6 md:px-6 text-black ">
+              <ul className="xs:text-4xl xl:text-6xl">
+                
                 {plantasPotabilizadoras.map((product) => (
-                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-2xl lg:text-3xl font-bold" key={product.id}>
+                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-xl md:text-xl xl:text-2xl font-bold" key={product.id}>
                     {product.title}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-
+          </div>
+          <div className="flex flex-col items-center h-1/3 lg:w-1/3 lg:h-full" >
+            <div className="h-1/2">
+            <div className="flex flex-col items-center justify-center overflow-visible lg:-mt-12 xxs:h-[250px] xxs:w-[250px] xl:h-[400px] xl:w-[400px] rounded-3xl bg-gray">
+                <p className="xxs:text-xl xl:text-4xl font-titles">MANTENIMIENTO</p>
+                <p className="font-body mb-4 text-xl xxs:text-3xl xl:text-5xl tracking-widest">DE PILETAS</p>
+            </div>
+            </div>
+          
           <div
-            className="mb-24 flex flex-col h-[830px] w-full justify-start items-center xxs:pt-20  lg:flex-row lg:justify-end lg:py-0 bg-cover bg-center bg-piletas-lg bg-piletas-sm"
+            className=" flex flex-col h-1/2  justify-start items-center xxs:pt-20 lg:justify-start  bg-transparent"
           >
-            <div className="flex w-full md:w-1/2 items-center justify-center px-6 md:px-20 font-body text-xl md:text-2xl text-black">
-              <ul className="text-2xl xs:text-4xl lg:text-6xl">
-                <p className="font-titles">MANTENIMIENTO</p>
-                <p className="font-body mb-4 text-xl xs:text-4xl lg:text-5xl tracking-widest">DE PILETAS</p>
+            <div className="overflow-visible bg-contain bg-no-repeat xxs:h-[180px] xxs:w-[180px] xl:h-[300px] xl:w-[300px] xxs:-mt-[220px] lg:-mt-[320px] xl:-mt-[320px]"
+        style={{ backgroundImage: "url('/images/Products/envases.png')" }}
+            />
+            <div className="flex w-full items-center justify-start mx-0 px-6 md:px-6 font-body text-black">
+              <ul className="text-2xl xs:text-4xl xl:text-6xl">
+                
                 {piletas.map((product) => (
-                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-2xl lg:text-3xl font-bold" key={product.id}>
+                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-xl md:text-xl xl:text-2xl font-bold" key={product.id}>
                     {product.title}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-          <div
-            className="flex fle-col h-[830px] w-full justify-center items-start xxs:pt-20 lg:flex-row lg:justify-start lg:items-center lg:py-0 bg-cover bg-center bg-industrias-lg bg-industrias-sm"
-            
-          >
-            <div className="flex w-full md:w-1/2 items-center justify-center px-6 lg:px-20 font-body text-xl md:text-2xl text-black">
-              <ul className="text-2xl xs:text-4xl lg:text-6xl">
-                <p className="font-titles">PRODUCTOS</p>
-                <p className="font-body mb-4 text-xl xs:text-4xl lg:text-5xl tracking-widest">
+          </div>
+          <div className="flex flex-col items-center h-1/3 lg:w-1/3 lg:h-full">
+            <div className="h-1/2">
+              <div className="flex flex-col items-center justify-center overflow-visible lg:-mt-12 xxs:h-[250px] xxs:w-[250px] xl:h-[400px] xl:w-[400px] rounded-3xl bg-darkBlue">
+                <p className="xxs:text-3xl xl:text-5xl font-titles">PRODUCTOS</p>
+                <p className="font-body mb-4 xxs:text-lg xl:text-xl  tracking-widest">
                   PARA INDUSTRIAS
                 </p>
+              </div>
+            </div>
+          <div
+            className=" flex flex-col h-1/2  justify-start items-center xxs:pt-20 lg:justify-start  bg-transparent"
+          >
+            <div className="overflow-visible bg-contain bg-top bg-no-repeat xxs:h-[180px] xxs:w-[320px] xl:h-[300px] xl:w-[500px] xxs:-mt-[220px] lg:-mt-[320px] xl:-mt-[320px]"
+        style={{ backgroundImage: "url('/images/Products/envasesCamion.png')" }}
+            />
+            <div className="flex w-full items-center justify-start mx-0 px-6 lg:px-6 font-body text-xl md:text-2xl text-black">
+              <ul className="text-2xl xs:text-4xl lg:text-6xl">
+                
                 {industrias.map((product) => (
-                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-2xl lg:text-3xl font-bold" key={product.id}>
+                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-xl md:text-xl xl:text-2xl font-bold" key={product.id}>
                     {product.title}
                   </li>
                 ))}
               </ul>
             </div>
+          </div>
           </div>
         </div>
       </div>
