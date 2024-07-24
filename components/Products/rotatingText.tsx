@@ -7,12 +7,12 @@ interface RotatingTextItem {
 
 const rotatingTexts: RotatingTextItem[] = [
   {
-    title: "Mantenimiento de Piletas",
-    paragraph: "Nuestra línea de productos químicos para el cuidado de piletas está diseñada para garantizar agua cristalina y segura en todo momento. Desde desinfectantes de amplio espectro y reguladores de pH hasta algicidas y clarificadores, ofrecemos una variedad de productos de alta calidad que ayudarán a mantener tu pileta en óptimas condiciones, brindando tranquilidad y disfrute a tus momentos de recreación."
-  },
-  {
     title: "Plantas Potabilizadoras",
     paragraph: "Ofrecemos una gama completa de productos químicos diseñados específicamente para plantas potabilizadoras. Nuestro compromiso es proporcionar soluciones de alta calidad que garanticen la pureza y seguridad del agua potable para comunidades y municipios."
+  },
+  {
+    title: "Mantenimiento de Piletas",
+    paragraph: "Nuestra línea de productos químicos para el cuidado de piletas está diseñada para garantizar agua cristalina y segura en todo momento. Desde desinfectantes de amplio espectro y reguladores de pH hasta algicidas y clarificadores, ofrecemos una variedad de productos de alta calidad que ayudarán a mantener tu pileta en óptimas condiciones, brindando tranquilidad y disfrute a tus momentos de recreación."
   },
   {
     title: "Productos Para Industrias",
@@ -30,8 +30,8 @@ const RotatingText = () => {
       setTimeout(() => {
         setIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
         setFadeClass("opacity-100");
-      }, 700); 
-    }, 4300); 
+      }, 1200); 
+    }, 6200); 
 
     return () => clearInterval(interval);
   }, []);
