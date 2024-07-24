@@ -31,7 +31,7 @@ const RotatingText = () => {
         setIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
         setFadeClass("opacity-100");
       }, 700); 
-    }, 4200); 
+    }, 4300); 
 
     return () => clearInterval(interval);
   }, []);
@@ -39,11 +39,11 @@ const RotatingText = () => {
   const { title, paragraph } = rotatingTexts[index];
 
   return (
-    <div className="relative w-1/2 h-full flex justify-start items-start text-start pl-0">
-      <div className="p-4 bg-transparent">
+    <div className="relative xxs:w-full xxs:h-full lg:w-1/2 lg:h-full flex justify-start items-start text-start  ">
+      <div className="p-16 bg-transparent">
         <div className={`transition-opacity duration-700 ${fadeClass}`}>
-          <h2 className="text-4xl font-titles pb-8">{title}</h2>
-          <p className="text-xl font-body">{paragraph}</p>
+          <h2 className="xxs:text-3xl sm:text-4xl lg:text-6xl font-titles pb-8">{title}</h2>
+          <p className="xxs:text-sm sm:text-xl lg:text-3xl font-body">{paragraph}</p>
         </div>
       </div>
     </div>
