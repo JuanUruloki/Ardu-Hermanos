@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       
       {/* RotatingText Component */}
-      <div className="relative z-20 flex items-center justify-start pl-44 w-full h-full">
+      <div className="relative z-20 flex flex-row items-center justify-start w-full h-full">
         <RotatingText />
       </div>
     </section>
