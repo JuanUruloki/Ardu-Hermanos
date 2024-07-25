@@ -1,19 +1,18 @@
-// "use client";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
-  // Navbar toggle
+  
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
 
-  // Sticky Navbar
+  
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
@@ -26,7 +25,7 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyNavbar);
   });
 
-  // submenu handler
+  
   const [openIndex, setOpenIndex] = useState(-1);
   const handleSubmenu = (index) => {
     if (openIndex === index) {
@@ -36,26 +35,32 @@ const Header = () => {
     }
   };
 
+  
+  const closeNavbar = () => {
+    setNavbarOpen(false);  
+    setOpenIndex(-1);      
+  };
+
   const usePathName = usePathname();
 
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-screen h-16 items-center font-header   ${
+        className={`header left-0 top-0 z-40 flex w-screen h-16 items-center font-header ${
           sticky
-            ? "fixed z-[9999] bg-gray-200 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gradient-to-r from-darkBlue to-lightBlue  dark:shadow-sticky-dark"
+            ? "fixed z-[9999] bg-gray-200 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gradient-to-r from-darkBlue to-lightBlue dark:shadow-sticky-dark"
             : "absolute bg-transparent"
         }`}
       >
         <div className="flex-row-reverse gap-20">
           <div className={`relative flex w-screen items-center justify-around ${!sticky ? "bg-gray-200 dark:bg-gradient-to-r from-darkBlue to-lightBlue": "from-darkBlue to-lightBlue "}`}>
-            <div className="flex  w-screen h-16 items-center justify-around">
+            <div className="flex w-screen h-16 items-center justify-around">
               <div>
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-blue-400 focus:ring-2 lg:hidden"
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
@@ -73,38 +78,37 @@ const Header = () => {
                     }`}
                   />
                 </button>
-                <div className="hidden absolute lg:block lg:-ml-24 xl:ml-0 pt-9 pl-36  ">
+                <div className="hidden absolute lg:block lg:-ml-24 xl:ml-0 pt-9 pl-36">
                     <a href="/">
-
-                    <Image
-                    src="/images/logo/logo_dark.svg"
-                    alt="logo"
-                    width={130}
-                    height={60}
-                    className="hidden  dark:block"
-                    />                    
+                      <Image
+                        src="/images/logo/logo_dark.svg"
+                        alt="logo"
+                        width={130}
+                        height={60}
+                        className="hidden dark:block"
+                      />                    
                     </a>
                   </div>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:dark:bg-lightBlue lg:flex lg:justify-end lg:visible lg:static lg:w-screen lg: lg:border-none  lg:!bg-transparent lg:pr-40 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:dark:bg-slate-600 lg:flex lg:justify-end lg:visible lg:static lg:w-screen lg:border-none lg:!bg-transparent lg:pr-40 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-90"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-5 lg:-mr-36 xl:mr-0 xl:space-x-14 ">
-                  
+                  <ul className="block lg:flex lg:space-x-5 lg:-mr-36 xl:mr-0 xl:space-x-14">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative ">
+                      <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex  py-2 text-3xl lg:mr-0 lg:inline-flex  lg:px-10 lg:py-6 ${
+                            className={`flex py-2 text-3xl lg:mr-0 lg:inline-flex lg:px-10 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary  dark:text-chalkArdu dark:hover:text-primary"
-                                : "text-dark hover:text-primary dark:text-chalkArdu dark:hover:text-primary"
+                                ? "text-blue-400 dark:text-chalkArdu dark:hover:text-blue-400"
+                                : "text-dark hover:text-blue-400 dark:text-chalkArdu dark:hover:text-blue-400"
                             }`}
+                            onClick={closeNavbar} 
                           >
                             {menuItem.title}
                           </Link>
@@ -112,7 +116,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-3xl  text-dark group-hover:text-primary dark:text-chalkArdu dark:group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex cursor-pointer items-center justify-between py-2 text-3xl text-dark group-hover:text-blue-400 dark:text-chalkArdu dark:group-hover:text-blue-400 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -127,7 +131,7 @@ const Header = () => {
                               </span>
                             </p>
                             <div
-                              className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                              className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-slate-600 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
@@ -135,7 +139,8 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className="block rounded py-2.5 text-2xl text-dark hover:text-primary dark:text-chalkArdu dark:hover:text-primary lg:px-3"
+                                  className="block rounded py-2.5 text-2xl text-dark hover:text-blue-400 dark:text-chalkArdu dark:hover:text-blue-400 lg:px-3"
+                                  onClick={closeNavbar} 
                                 >
                                   {submenuItem.title}
                                 </Link>
@@ -150,11 +155,9 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div>
-                  {/* <ThemeToggler /> */}
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </header>
