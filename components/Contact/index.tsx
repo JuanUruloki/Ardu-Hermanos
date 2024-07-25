@@ -99,8 +99,8 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="overflow-hidden bg-cover bg-center bg-no-repeat py-16 dark:bg-gradient-to-r from-gray to-gray-light md:py-20 lg:py-28"
-      // style={{ backgroundImage: "url('/images/Backgrounds/background6C.svg')" }}
+      className="overflow-hidden bg-cover bg-center bg-no-repeat bg-opacity-10 py-16 dark:bg-slate-300 md:py-20 lg:py-28"
+      style={{ backgroundImage: "url('/images/Backgrounds/contact.png')" }}
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
