@@ -43,7 +43,7 @@ const Products = () => {
           <div className="flex flex-col items-center  h-1/3 lg:w-1/3 lg:h-full">
           <div className="flex flex-col items-center h-1/2 ">
             <div className=" flex flex-col items-center justify-center overflow-visible lg:-mt-12 xxs:h-[250px] xxs:w-[250px] xl:h-[400px] xl:w-[400px] rounded-3xl  bg-lightBlue">
-                <p className=" xxs:text-4xl xl:text-7xl font-titles">PLANTAS</p>
+                <p className=" xxs:text-4xl xl:text-6xl font-titles">PLANTAS</p>
                 <p className="font-body mb-4 xxs:text-lg xl:text-xl tracking-widest">
                   POTABILIZADORAS
                 </p>
@@ -67,38 +67,12 @@ const Products = () => {
             </div>
           </div>
           </div>
-          <div className="flex flex-col items-center h-1/3 lg:w-1/3 lg:h-full" >
-            <div className="h-1/2">
-            <div className="flex flex-col items-center justify-center overflow-visible lg:-mt-12 xxs:h-[250px] xxs:w-[250px] xl:h-[400px] xl:w-[400px] rounded-3xl bg-gray">
-                <p className="xxs:text-xl xl:text-4xl font-titles">MANTENIMIENTO</p>
-                <p className="font-body mb-4 text-xl xxs:text-3xl xl:text-5xl tracking-widest">DE PILETAS</p>
-            </div>
-            </div>
-          
-          <div
-            className=" flex flex-col h-1/2  justify-start items-center xxs:pt-20 lg:justify-start  bg-transparent"
-          >
-            <div className="overflow-visible bg-contain bg-no-repeat xxs:h-[180px] xxs:w-[180px] xl:h-[300px] xl:w-[300px] xxs:-mt-[220px] lg:-mt-[320px] xl:-mt-[320px]"
-        style={{ backgroundImage: "url('/images/Products/envases.png')" }}
-            />
-            <div className="flex w-full items-center justify-start mx-0 px-6 md:px-6 font-body text-black">
-              <ul className="text-2xl xs:text-4xl xl:text-6xl">
-                
-                {piletas.map((product) => (
-                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-xl md:text-xl xl:text-2xl font-bold" key={product.id}>
-                    {product.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          </div>
           <div className="flex flex-col items-center h-1/3 lg:w-1/3 lg:h-full">
             <div className="h-1/2">
               <div className="flex flex-col items-center justify-center overflow-visible lg:-mt-12 xxs:h-[250px] xxs:w-[250px] xl:h-[400px] xl:w-[400px] rounded-3xl bg-darkBlue">
-                <p className="xxs:text-3xl xl:text-5xl font-titles">PRODUCTOS</p>
-                <p className="font-body mb-4 xxs:text-lg xl:text-xl  tracking-widest">
-                  PARA INDUSTRIAS
+                <p className="font-body xxs:text-lg xl:text-xl  tracking-widest">PRODUCTOS PARA</p>
+                <p className="mb-4 xxs:text-3xl xl:text-6xl font-titles">
+                  INDUSTRIAS
                 </p>
               </div>
             </div>
@@ -120,6 +94,33 @@ const Products = () => {
             </div>
           </div>
           </div>
+          <div className="flex flex-col items-center h-1/3 lg:w-1/3 lg:h-full" >
+            <div className="h-1/2">
+            <div className="flex flex-col items-center justify-center overflow-visible lg:-mt-12 xxs:h-[250px] xxs:w-[250px] xl:h-[400px] xl:w-[400px] rounded-3xl bg-gray">
+                <p className="font-body text-xl xxs:text-lg xl:text-2xl tracking-widest">MANTENIMIENTO DE</p>
+                <p className="mb-4 xxs:text-3xl xl:text-6xl font-titles">PILETAS</p>
+            </div>
+            </div>
+          
+          <div
+            className=" flex flex-col h-1/2  justify-start items-center xxs:pt-20 lg:justify-start  bg-transparent"
+          >
+            <div className="overflow-visible bg-contain bg-no-repeat xxs:h-[180px] xxs:w-[180px] xl:h-[300px] xl:w-[300px] xxs:-mt-[220px] lg:-mt-[320px] xl:-mt-[320px]"
+        style={{ backgroundImage: "url('/images/Products/envases.png')" }}
+            />
+            <div className="flex w-full items-center justify-start mx-0 px-6 md:px-6 font-body text-black">
+              <ul className="text-2xl xs:text-4xl xl:text-6xl">
+                
+                {piletas.map((product) => (
+                  <li className="font-body tracking-wide lg:tracking-widest text-lg xs:text-xl md:text-xl xl:text-2xl font-bold" key={product.id}>
+                    {product.title}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          </div>
+          
         </div>
       </div>
     </section>

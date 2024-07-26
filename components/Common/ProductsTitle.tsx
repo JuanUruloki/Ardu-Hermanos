@@ -16,7 +16,7 @@ const SectionTitle = ({
   return (
     <>
       <div
-        className={`flex flex-col w-[50vw] h-[600px] ${center ? "mx-auto text-center" : ""}`}
+        className={`flex flex-col w-[50vw] h-[600px] ${center ? "mx-auto text-start" : ""}`}
         data-wow-delay=".1s"
         style={{ maxWidth: width, marginBottom: mb }}
       >
