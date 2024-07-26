@@ -19,7 +19,7 @@ const Products = () => {
         <div
           className="flex flex-col-reverse lg:flex-row items-center justify-end xxs:h-[1300px] lg:h-[1050px] bg-cover xxs:bg-bottom lg:bg-top bg-products-lg bg-products-sm"
         >
-          <div className="w-full h-full md:w-1/2 items-center justify-center  lg:pr-28 xxs:pt-24 md:pt-28 lg:pt-48">
+          <div className="w-full h-full md:w-1/2 items-center justify-center  lg:pr-28 xxs:pt-28 md:pt-28 lg:pt-48">
             <ProductsTitle
               title="NUESTROS PRODUCTOS"
               paragraph1="En nuestra empresa, ofrecemos una gama completa de productos químicos de alta calidad para plantas potabilizadoras, industrias y piletas."
@@ -30,7 +30,7 @@ const Products = () => {
           <div className="absolute xs:top-[-90px] xxs:top-[-75px] right-0 w-full md:w-2/3 lg:w-1/2 xxl:w-2/5 xs:h-[180px] xxs:h-[150px] bg-gradient-to-r from-gray via-gray  flex flex-row shadow-lg overflow-visible">
         <div className="w-3/5 pl-10 flex flex-col items-start justify-center relative z-10">
           <p className="xl:text-3xl md:text-2xl xs:text-xl xxs:text-lg font-titles">SERVICIO A GRANEL</p>
-          <p className="xl:text-xl md:text-lg xs:text-base xxs:text-sm font-body">Ofrecemos venta a granel de productos quimicos para plantas potabilizadoras e industrias</p>
+          <p className="xl:text-xl md:text-lg xs:text-base xxs:text-sm font-body">Disponemos de venta a granel con entrega puerta a puerta mediante nuestra flota propia, adaptándonos a cualquier volumen de compra</p>
         </div>
         <div className="absolute top-[-130px] right-0 w-2/5 h-[300px] bg-contain bg-center bg-no-repeat overflow-visible"
         style={{ backgroundImage: "url('/images/Products/camion.png')" }}
