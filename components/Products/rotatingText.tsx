@@ -40,10 +40,10 @@ const RotatingText = () => {
 
   return (
     <div className="relative xxs:w-full xxs:h-full lg:w-1/2 lg:h-full flex justify-start items-start text-start  ">
-      <div className="pl-16 pr-8 bg-transparent">
+      <div className="pl-8 md:pl-16 pr-8 bg-transparent">
         <div className={`transition-opacity duration-700 ${fadeClass}`}>
-          <h2 className="xxs:text-3xl sm:text-4xl lg:text-6xl font-titles pb-4">{title}</h2>
-          <p className="xxs:text-sm sm:text-xl lg:text-3xl font-body">{paragraph}</p>
+          <h2 className="xxs:text-3xl sm:text-4xl lg:text-5xl font-titles pb-4">{title}</h2>
+          <p className="xxs:text-sm sm:text-xl lg:text-2xl font-body">{paragraph}</p>
         </div>
       </div>
     </div>
