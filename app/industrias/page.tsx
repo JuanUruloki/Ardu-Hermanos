@@ -26,7 +26,7 @@ const Industrias = () => {
             muted
             playsInline
             className="absolute left-0 top-0 hidden h-full w-full object-cover md:block"
-            src="/videos/Hero.mp4"
+            src="/videos/Industrias.mp4"
           />
           <video
             autoPlay
@@ -34,7 +34,7 @@ const Industrias = () => {
             muted
             playsInline
             className="absolute left-0 top-0 block h-full w-full object-cover md:hidden"
-            src="/videos/HeroMobile.mp4"
+            src="/videos/IndustriasMobile.mp4"
           />
         </div>
       </div>
