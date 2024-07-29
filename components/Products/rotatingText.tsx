@@ -7,16 +7,16 @@ interface RotatingTextItem {
 
 const rotatingTexts: RotatingTextItem[] = [
   {
-    title: "Plantas Potabilizadoras",
-    paragraph: "Ofrecemos una gama completa de productos químicos diseñados específicamente para plantas potabilizadoras. Nuestro compromiso es proporcionar soluciones de alta calidad que garanticen la pureza y seguridad del agua potable para comunidades y municipios."
+    title: "PLANTAS POTABILIZADORAS",
+    paragraph: "Ofrecemos una gama completa de productos químicos para plantas potabilizadoras, garantizando la pureza y seguridad del agua potable para comunidades y municipios."
   },
   {
-    title: "Productos Para Industrias",
-    paragraph: "En nuestro catálogo de productos químicos para industrias, encontrarás una amplia selección de compuestos diseñados para optimizar procesos productivos y garantizar estándares de calidad superiores. Desde agentes de limpieza y desengrasantes hasta inhibidores de corrosión y productos especializados para tratamiento de efluentes, ofrecemos soluciones integrales que ayudarán a mejorar la eficiencia y la rentabilidad de tu empresa."
+    title: "Productos Para INDUSTRIAS",
+    paragraph: "Nuestro catálogo de productos químicos para industrias incluye compuestos que optimizan procesos productivos y aseguran altos estándares de calidad, mejorando la eficiencia y rentabilidad de tu empresa."
   },
   {
-    title: "Mantenimiento de Piletas",
-    paragraph: "Nuestra línea de productos químicos para el cuidado de piletas está diseñada para garantizar agua cristalina y segura en todo momento. Desde desinfectantes de amplio espectro y reguladores de pH hasta algicidas y clarificadores, ofrecemos una variedad de productos de alta calidad que ayudarán a mantener tu pileta en óptimas condiciones, brindando tranquilidad y disfrute a tus momentos de recreación."
+    title: "Mantenimiento de PILETAS",
+    paragraph: "Nuestra línea de productos químicos para piletas garantiza agua cristalina y segura, con desinfectantes, reguladores de pH, alguicidas y clarificadores de alta calidad, para mantener tu pileta en óptimas condiciones."
   },
 ];
 
