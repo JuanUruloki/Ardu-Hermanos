@@ -27,7 +27,7 @@ const PlantasPotabilizadoras = () => {
             muted
             playsInline
             className="absolute left-0 top-0 hidden h-full w-full object-cover md:block"
-            src="/videos/Plantas.mp4"
+            src="/videos/Plantas2.mp4"
           />
           <video
             autoPlay
@@ -35,7 +35,7 @@ const PlantasPotabilizadoras = () => {
             muted
             playsInline
             className="absolute left-0 top-0 block h-full w-full object-cover md:hidden"
-            src="/videos/PlantasMobile.mp4"
+            src="/videos/PlantasMobile2.mp4"
           />
         </div>
       </div>
