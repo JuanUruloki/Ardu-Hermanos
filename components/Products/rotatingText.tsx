@@ -11,12 +11,12 @@ const rotatingTexts: RotatingTextItem[] = [
     paragraph: "Ofrecemos una gama completa de productos químicos diseñados específicamente para plantas potabilizadoras. Nuestro compromiso es proporcionar soluciones de alta calidad que garanticen la pureza y seguridad del agua potable para comunidades y municipios."
   },
   {
-    title: "Productos Para Industrias",
-    paragraph: "En nuestro catálogo de productos químicos para industrias, encontrarás una amplia selección de compuestos diseñados para optimizar procesos productivos y garantizar estándares de calidad superiores. Desde agentes de limpieza y desengrasantes hasta inhibidores de corrosión y productos especializados para tratamiento de efluentes, ofrecemos soluciones integrales que ayudarán a mejorar la eficiencia y la rentabilidad de tu empresa."
-  },
-  {
     title: "Mantenimiento de Piletas",
     paragraph: "Nuestra línea de productos químicos para el cuidado de piletas está diseñada para garantizar agua cristalina y segura en todo momento. Desde desinfectantes de amplio espectro y reguladores de pH hasta algicidas y clarificadores, ofrecemos una variedad de productos de alta calidad que ayudarán a mantener tu pileta en óptimas condiciones, brindando tranquilidad y disfrute a tus momentos de recreación."
+  },
+  {
+    title: "Productos Para Industrias",
+    paragraph: "En nuestro catálogo de productos químicos para industrias, encontrarás una amplia selección de compuestos diseñados para optimizar procesos productivos y garantizar estándares de calidad superiores. Desde agentes de limpieza y desengrasantes hasta inhibidores de corrosión y productos especializados para tratamiento de efluentes, ofrecemos soluciones integrales que ayudarán a mejorar la eficiencia y la rentabilidad de tu empresa."
   },
 ];
 
@@ -30,8 +30,8 @@ const RotatingText = () => {
       setTimeout(() => {
         setIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
         setFadeClass("opacity-100");
-      }, 1800); 
-    }, 6000); 
+      }, 1200); 
+    }, 6200); 
 
     return () => clearInterval(interval);
   }, []);
