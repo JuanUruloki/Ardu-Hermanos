@@ -25,7 +25,7 @@ const Piletas = () => {
             muted
             playsInline
             className="absolute left-0 top-0 hidden h-full w-full object-cover md:block"
-            src="/videos/Piletas.mp4"
+            src="/videos/Piletas2.mp4"
           />
           <video
             autoPlay
@@ -33,7 +33,7 @@ const Piletas = () => {
             muted
             playsInline
             className="absolute left-0 top-0 block h-full w-full object-cover md:hidden"
-            src="/videos/PiletasMobile.mp4"
+            src="/videos/PiletasMobile2.mp4"
           />
         </div>
       </div>

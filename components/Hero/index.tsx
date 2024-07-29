@@ -13,7 +13,7 @@ const Hero = () => {
           muted
           playsInline
           className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
-          src="/videos/Hero.mp4"
+          src="/videos/Hero2.mp4"
         />
         <video
           autoPlay
@@ -21,7 +21,7 @@ const Hero = () => {
           muted
           playsInline
           className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"
-          src="/videos/HeroMobile.mp4"
+          src="/videos/HeroMobile2.mp4"
         />
       </div>
       
