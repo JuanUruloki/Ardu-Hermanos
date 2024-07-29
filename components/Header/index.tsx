@@ -46,7 +46,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-screen h-16 items-center font-header ${
+        className={`header left-0 top-0 z-40 flex w-screen h-20 items-center font-header ${
           sticky
             ? "fixed z-[9999] bg-gray-200 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gradient-to-r from-darkBlue to-lightBlue dark:shadow-sticky-dark"
             : "absolute bg-transparent"
@@ -54,7 +54,7 @@ const Header = () => {
       >
         <div className="flex-row-reverse gap-20">
           <div className={`relative flex w-screen items-center justify-around ${!sticky ? "bg-gray-200 dark:bg-gradient-to-r from-darkBlue to-lightBlue": "from-darkBlue to-lightBlue "}`}>
-            <div className="flex w-screen h-16 items-center justify-around">
+            <div className="flex w-screen h-20 items-center justify-around">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -78,12 +78,12 @@ const Header = () => {
                     }`}
                   />
                 </button>
-                <div className="hidden absolute lg:block lg:-ml-24 xl:ml-0 pt-9 pl-36">
+                <div className="hidden absolute lg:block lg:-ml-24 xl:ml-0 pt-[21px] pl-36">
                     <a href="/">
                       <Image
                         src="/images/logo/logo_dark.svg"
                         alt="logo"
-                        width={130}
+                        width={220}
                         height={60}
                         className="hidden dark:block"
                       />                    
