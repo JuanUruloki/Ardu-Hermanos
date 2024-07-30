@@ -5,7 +5,7 @@ import productsData from "../../components/Products/productsData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ardu Hermanos > Industrias",
+  title: "Ardu Hermanos - Industrias",
   description: "Productos para Industrias",
   // other metadata
 };

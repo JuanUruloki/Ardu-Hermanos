@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Empresa",
+  title: "Ardu Hermanos - Empresa",
   description: "Nuestra Historia",
 };
 

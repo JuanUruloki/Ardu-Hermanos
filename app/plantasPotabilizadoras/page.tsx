@@ -5,7 +5,7 @@ import plantasPotabilizadorasData from "@/components/Products/plantasPotabilizad
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ardu Hermanos > Plantas potabilizadoras",
+  title: "Ardu Hermanos - Plantas potabilizadoras",
   description: "Productos para plantas potabilizadoras",
   // other metadata
 };

@@ -5,7 +5,7 @@ import productsData from "../../components/Products/productsData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ardu Hermanos > Piletas",
+  title: "Ardu Hermanos - Piletas",
   description: "Productos para piletas",
   // other metadata
 };
