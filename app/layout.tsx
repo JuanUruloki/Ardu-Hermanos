@@ -20,12 +20,8 @@ export default function RootLayout({
       <Head>
         <title>Ardu Hermanos - Home</title>
         <meta name="description" content="Comercialización y distribución de productos químicos" />
-        <meta property="og:title" content="Ardu Hermanos" />
-        <meta property="og:description" content="Productos Químicos" />
         <meta property="og:image" content="https://res.cloudinary.com/dsf3qr13z/image/upload/v1722304057/og_image_uceuev.jpg" />
-        <meta property="og:url" content="https://arduhnos.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Ardu Hermanos Home" />
+        <meta property="og:site_name" content="Ardu Hermanos" />
       </Head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>

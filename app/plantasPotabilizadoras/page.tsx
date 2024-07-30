@@ -7,7 +7,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Ardu Hermanos - Plantas potabilizadoras",
   description: "Productos para plantas potabilizadoras",
-  // other metadata
 };
 
 const PlantasPotabilizadoras = () => {
