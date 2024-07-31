@@ -27,7 +27,7 @@ const SectionTitle = ({
         <h2 className="xxs:mb-2 md:mb-4 xl:mb-6 text-3xl font-titles text-start text-darkBlue dark:text-darkBlue xxs:text-[40px] xs:text-[45px] md:text-[55px] xl:text-[60px]">
           {title1}
         </h2>
-        <h2 className="xxs:mb-10 md:mb-12 lg:mb-10 text-3xl font-body text-start text-darkBlue dark:text-darkBlue xxs:text-[40px] xs:text-[45px] md:text-[55px] xl:text-[60px]">
+        <h2 className="xxs:mb-3 md:mb-4 lg:mb-5  xl:mb-6 text-3xl font-body text-start text-darkBlue dark:text-darkBlue xxs:text-[30px] xs:text-[35px] md:text-[40px] xl:text-[45px]">
           {title2}
         </h2>
         <h2 className="xxs:mb-10 md:mb-12 lg:mb-10 text-3xl font-titles text-start text-darkBlue dark:text-darkBlue xxs:text-[40px] xs:text-[45px] md:text-[55px] xl:text-[60px]">
