@@ -49,7 +49,7 @@ const Industrias = () => {
         <div className="flex h-full w-screen flex-col ">
           <div className="flex h-1/2 flex-row">
             <div className="xxs:hidden lg:block h-full lg:w-1/3 xl:w-1/2 "></div>
-            <div className="flex h-full xxs:w-full lg:w-2/3 xl:w-1/2 items-center mt-28 md:px-28 xxs:px-6 xs:px-12 ">
+            <div className="flex h-full xxs:w-full lg:w-2/3 xl:w-1/2 items-center mt-28 md:px-20 xxs:px-6 xs:px-12 ">
               <SectionTitle
                 title1=""
                 title1a="INDUSTRIAS"
@@ -66,7 +66,7 @@ const Industrias = () => {
               <ul className="xs:text-4xl xl:text-7xl">
               {industrias.map((product) => (
                     <li
-                      className="font-body tracking-wide lg:tracking-widest text-lg xxs:text-xl xs:text-2xl md:text-3xl xl:text-5xl font-bold"
+                      className="font-body tracking-wide lg:tracking-widest xxs:text-lg xs:text-xl md:text-2xl xl:text-3xl font-bold"
                       key={product.id}
                     >
                       {product.title}
