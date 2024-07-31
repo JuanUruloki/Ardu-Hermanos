@@ -18,8 +18,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <Head>
-        <title>Ardu Hermanos - Home</title>
-        <meta name="description" content="Comercialización y distribución de productos químicos" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content="https://res.cloudinary.com/dsf3qr13z/image/upload/v1722304057/og_image_uceuev.jpg" />
         <meta property="og:site_name" content="Ardu Hermanos" />
       </Head>
