@@ -45,7 +45,7 @@ const RotatingText = () => {
       setTimeout(() => {
         setIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
         setFadeClass("opacity-100");
-      }, 500);
+      }, 300);
     }, 8000);
 
     return () => clearInterval(interval);
