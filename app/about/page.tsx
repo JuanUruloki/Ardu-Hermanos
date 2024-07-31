@@ -21,7 +21,7 @@ const AboutPage = () => {
             muted
             playsInline
             className="absolute left-0 top-0 hidden h-full w-full object-cover md:block"
-            src="/videos/Planta.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432543/ArduHnos/nw0sdynhbhixedx7d9uv.mp4"
           />
           <video
             autoPlay
@@ -29,7 +29,7 @@ const AboutPage = () => {
             muted
             playsInline
             className="absolute left-0 top-0 block h-full w-full object-cover md:hidden"
-            src="/videos/PlantaMobile.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432558/ArduHnos/hh17bvirywviq4nnaaah.mp4"
           />
         </div>
       </div>
