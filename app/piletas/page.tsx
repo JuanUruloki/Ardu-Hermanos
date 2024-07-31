@@ -65,7 +65,7 @@ const Piletas = () => {
               <ul className="xs:text-4xl xl:text-7xl">
               {piletas.map((product) => (
                     <li
-                      className="font-body tracking-wide lg:tracking-widest text-lg xxs:text-xl xs:text-2xl md:text-3xl xl:text-5xl font-bold"
+                      className="font-body tracking-wide lg:tracking-widest xxs:text-lg xs:text-xl md:text-2xl xl:text-3xl font-bold"
                       key={product.id}
                     >
                       {product.title}
