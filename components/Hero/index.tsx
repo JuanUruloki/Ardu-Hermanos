@@ -13,7 +13,7 @@ const Hero = () => {
           muted
           playsInline
           className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
-          src="/videos/Hero2.mp4"
+          src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722435184/heroNew_dktcml.mp4"
         />
         <video
           autoPlay
@@ -21,7 +21,7 @@ const Hero = () => {
           muted
           playsInline
           className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"
-          src="/videos/HeroMobile2.mp4"
+          src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432592/ArduHnos/bnuijcjxqzcqf8d1my3b.mp4"
         />
       </div>
       
