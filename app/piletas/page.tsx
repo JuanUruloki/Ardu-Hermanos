@@ -25,7 +25,7 @@ const Piletas = () => {
             muted
             playsInline
             className="absolute left-0 top-0 hidden h-full w-full object-cover md:block"
-            src="/videos/Piletas2.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432555/ArduHnos/sm60kcp0e2mp4rddjelu.mp4"
           />
           <video
             autoPlay
@@ -33,7 +33,7 @@ const Piletas = () => {
             muted
             playsInline
             className="absolute left-0 top-0 block h-full w-full object-cover md:hidden"
-            src="/videos/PiletasMobile2.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432557/ArduHnos/qnmyits3zxpo6wf8ryzr.mp4"
           />
         </div>
       </div>

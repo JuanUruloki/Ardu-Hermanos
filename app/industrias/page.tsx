@@ -26,7 +26,7 @@ const Industrias = () => {
             muted
             playsInline
             className="absolute left-0 top-0 hidden h-full w-full object-cover md:block"
-            src="/videos/Industrias2.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432561/ArduHnos/xibzptcarzlmbhunmydp.mp4"
           />
           <video
             autoPlay
@@ -34,7 +34,7 @@ const Industrias = () => {
             muted
             playsInline
             className="absolute left-0 top-0 block h-full w-full object-cover md:hidden"
-            src="/videos/IndustriasMobile2.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432542/ArduHnos/xwqsyfo4rxb1dodihip5.mp4"
           />
         </div>
       </div>

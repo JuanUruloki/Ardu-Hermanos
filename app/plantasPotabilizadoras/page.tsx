@@ -26,7 +26,7 @@ const PlantasPotabilizadoras = () => {
             muted
             playsInline
             className="absolute left-0 top-0 hidden h-full w-full object-cover md:block"
-            src="/videos/Plantas2.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432580/ArduHnos/p1dy4eupbkcwlobs8mzm.mp4"
           />
           <video
             autoPlay
@@ -34,7 +34,7 @@ const PlantasPotabilizadoras = () => {
             muted
             playsInline
             className="absolute left-0 top-0 block h-full w-full object-cover md:hidden"
-            src="/videos/PlantasMobile2.mp4"
+            src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432564/ArduHnos/p9pkaxpfzezajohma0bq.mp4"
           />
         </div>
       </div>

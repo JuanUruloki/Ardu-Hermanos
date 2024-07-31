@@ -21,7 +21,7 @@ const Hero = () => {
           muted
           playsInline
           className="block md:hidden absolute top-0 left-0 w-full h-full object-cover"
-          src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722432592/ArduHnos/bnuijcjxqzcqf8d1my3b.mp4"
+          src="https://res.cloudinary.com/dsf3qr13z/video/upload/v1722437195/heroMovileNew_zbnwgm.mp4"
         />
       </div>
       
