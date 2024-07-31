@@ -22,7 +22,7 @@ const rotatingTexts: RotatingTextItem[] = [
       </>
     ),
     paragraph:
-      "Nuestro catálogo de productos químicos para industrias incluye compuestos que optimizan procesos productivos y aseguran altos estándares de calidad, mejorando la eficiencia y rentabilidad de tu empresa.",
+      "Nuestro catálogo para industrias incluye compuestos que optimizan procesos productivos y aseguran altos estándares de calidad, mejorando la eficiencia y rentabilidad de tu empresa.",
   },
   {
     title: (
@@ -31,7 +31,7 @@ const rotatingTexts: RotatingTextItem[] = [
       </>
     ),
     paragraph:
-      "Nuestra línea de productos químicos para piletas garantiza agua cristalina y segura, con desinfectantes, reguladores de pH, alguicidas y clarificadores de alta calidad, para mantener tu pileta en óptimas condiciones.",
+      "Nuestra línea para piletas garantiza agua cristalina y segura, con desinfectantes, reguladores de pH, alguicidas y clarificadores de alta calidad, para mantener tu pileta en óptimas condiciones.",
   },
 ];
 
@@ -45,8 +45,8 @@ const RotatingText = () => {
       setTimeout(() => {
         setIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
         setFadeClass("opacity-100");
-      }, 1800);
-    }, 6000);
+      }, 1500);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
