@@ -18,9 +18,21 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <Head>
+        <title>Ardu Hermanos</title>
+        <meta name="description" content="Your website description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="https://res.cloudinary.com/dsf3qr13z/image/upload/v1722304057/og_image_uceuev.jpg" />
+        <meta property="og:title" content="Ardu Hermanos" />
+        <meta property="og:description" content="Your website description" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dsf3qr13z/image/upload/v1722304057/og_image_uceuev.jpg"
+        />
         <meta property="og:site_name" content="Ardu Hermanos" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/dsf3qr13z/image/upload/v1722304057/og_image_uceuev.jpg"
+        />
       </Head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
