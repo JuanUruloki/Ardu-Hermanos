@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Map from "../Map/map";
 import axios from "axios";
 
@@ -23,6 +23,16 @@ const Contact = () => {
   });
 
   const [message, setMessage] = useState("");
+  const [backgroundImage, setBackgroundImage] = useState("");
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    setBackgroundImage(
+      currentPath === "/about"
+        ? "url('/images/Backgrounds/contact2.jpg')"
+        : "url('/images/Backgrounds/contact.png')"
+    );
+  }, []);
 
   const validate = () => {
     const newErrors = { name: "", email: "", message: "" };
@@ -100,31 +110,29 @@ const Contact = () => {
     <section
       id="contact"
       className="overflow-hidden bg-cover bg-center bg-no-repeat bg-opacity-10 py-16 dark:bg-slate-300 md:py-20 lg:py-28"
-      style={{ backgroundImage: "url('/images/Backgrounds/contact.png')" }}
+      style={{ backgroundImage }}
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="flex w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="wow fadeInUp  mb-12 rounded-lg bg-white px-8 py-14 dark:bg-transparent sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s
-              "
+              className="wow fadeInUp mb-12 rounded-lg bg-white px-8 py-14 dark:bg-transparent sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              data-wow-delay=".15s"
             >
               <h2 className="mb-3 pl-2 text-3xl font-titles text-black dark:text-white sm:text-3xl lg:text-3xl xl:text-3xl">
                 Necesitas ayuda? Contactanos
               </h2>
               <p className="mb-12 pl-2 text-base font-body text-withe">
-                Nuestro equipo de atención al cliente está esperando tu
-                consulta.
+                Nuestro equipo de atención al cliente está esperando tu consulta.
               </p>
               <form
                 action="https://formspree.io/f/xrbzzojr"
                 method="POST"
                 onSubmit={handleSubmit}
               >
-                <div className="-mx-4  flex flex-wrap ">
+                <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-6 -mt-4 ">
+                    <div className="mb-6 -mt-4">
                       <label
                         htmlFor="name"
                         className="mb-3 pl-2 block text-lg font-body text-dark dark:text-white"
